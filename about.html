@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Ndogo farms</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@500;600;700&family=Open+Sans:wght@400;500&display=swap" rel="stylesheet">  
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css" crossorigin="anonymous" />
+
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+    <style>
+    /* Mission Background */
+
+.mission-vision {
+    padding: 60px 0;
+}
+
+/* Text Styling */
+.text-content {
+    padding-right: 30px;
+}
+
+.text-content h2 {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #27ae60;
+}
+
+.text-content p {
+    font-size: 18px;
+    color: #555;
+    line-height: 1.6;
+}
+
+/* Image Styling */
+.image-container {
+    text-align: center;
+}
+
+.image-container img {
+    width: 100%;
+    max-height: 500px;
+    object-fit: cover;
+    border-radius: 10px;
+   
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .row {
+        flex-direction: column;
+    }
+
+    .text-content {
+        padding: 0 20px;
+        text-align: center;
+    }
+
+    .image-container img {
+        max-height: 400px;
+    }
+}
+
+/*Partner Section*/
+.partners-section {
+    padding: 60px 0;
+    background-color: #f9f9f9;
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+}
+
+.partners-title {
+    font-size: 28px;
+    font-weight: 600;
+    color: #27ae60;
+    margin-bottom: 30px;
+}
+
+.partners-carousel {
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+}
+
+.partners-track {
+    display: flex;
+    gap: 40px;
+    animation: scroll 15s linear infinite;
+    width: max-content;
+    align-items: center;
+}
+
+.partners-track img {
+    height: 80px;
+    object-fit: contain;
+    transition: transform 0.3s ease-in-out;
+}
+
+.partners-track img:hover {
+    transform: scale(1.1);
+}
+
+/* Animation */
+@keyframes scroll {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-50%);
+    }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .partners-track {
+        animation-duration: 12s;
+    }
+
+    .partners-track img {
+        height: 60px;
+    }
+}
+/*Responsive about section*/
+.video-responsive {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 ratio */
+  height: 0;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+.video-responsive iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+/* Make the video box taller on large screens */
+@media (min-width: 992px) {
+  .video-responsive {
+    padding-bottom: 48%; /* taller */
+  }
+}
+    </style>
+</head>
+    <!-- Spinner Start -->
+    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-border text-primary" role="status" style="width: 3rem; height: 3rem;"></div>
+    </div>
+    <!-- Spinner End -->
+
+
+    <!-- Topbar Start -->
+    <div class="container-fluid bg-dark text-light px-0 py-2">
+        <div class="row gx-0 d-none d-lg-flex">
+            <div class="col-lg-7 px-5 text-start">
+                <div class="h-100 d-inline-flex align-items-center me-4">
+                    <span class="fa fa-phone-alt me-2"></span>
+                    <span>+254794311738</span>
+                </div>
+                <div class="h-100 d-inline-flex align-items-center">
+                    <span class="far fa-envelope me-2"></span>
+                    <span>info@ndogofarms.co.ke</span>
+                </div>
+            </div>
+            <div class="col-lg-5 px-5 text-end">
+                <div class="h-100 d-inline-flex align-items-center mx-n2">
+                    <span>Follow Us:</span>
+                    <a class="btn btn-link text-light" target="_blank" href="https://www.facebook.com/Ndogofarm?mibextid=ZbWKwL"><i class="fab fa-facebook-f"></i></a>
+                    <a class="btn btn-link text-light" target="_blank" href="https://twitter.com/ndogofarm?s=20&t=lgZoV5f4JSq6gzsXuqDlmg"><i class="fab fa-twitter"></i></a>
+                    <a class="btn btn-link text-light" target="_blank" href="https://www.instagram.com/ndogo_farms?igsh=MWI4Y2NzY2dhaTk3eA=="><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Topbar End -->
+
+
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top p-0">
+        <a href="index.html" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
+            <div id="logo-img">
+                <img src="img/newlogobg.png" style="height: 175%; width: auto; position: relative; top: 8.5px">
+
+
+            </div>
+        </a>
+        <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav ms-auto p-4 p-lg-0" >
+                <a href="index.html" class="nav-item nav-link active">Home</a>
+                <a href="about.html" class="nav-item nav-link">About</a>
+                <a href="service.html" class="nav-item nav-link">Services</a>
+                <a href="project.html" class="nav-item nav-link">Projects</a>
+                 <a href="companion.html" class="nav-item nav-link">Companion</a>
+                <a href="contact.html" class="nav-item nav-link">Contact</a>
+            </div>       
+         </div>
+    </nav>
+    <!-- Navbar End -->
+
+<section>
+  <div class="container py-5 wow fadeIn" data-wow-delay="0.5s">
+    <div class="row align-items-center">
+      
+      <!-- Video Column -->
+     <div class="col-lg-6 col-md-12 mb-4 mb-lg-0 order-2 order-lg-1">
+  <div class="video-responsive">
+    <iframe src="https://www.youtube-nocookie.com/embed/PhWm4NmtNnc?rel=0&amp;controls=1&amp;showinfo=0" 
+            title="Ndogo Farm" 
+            allowfullscreen 
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture">
+    </iframe>
+  </div>
+</div>
+
+      <!-- Text Column -->
+      <div class="col-lg-6 col-md-12 order-1 order-lg-2">
+        <div class="section-title">
+          <h5 class="text-primary mb-3">About Us</h5>
+          <h2 class="fw-bold mb-4">Our Problem Statement</h2>
+          <p class="text-muted">
+            By 2050, over 70% of Kenya’s population will live in urban areas. This rising demand for food has led to unsafe farming practices using synthetic chemicals, harming health and the environment.
+            <br><br>
+            At Ndogo Farms, we turn small urban spaces into gardens using eco-friendly grow bags and recycled containers—ensuring families access fresh, organic vegetables from their own homes.
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+    <!-- ======= Vision Section ======= -->
+    <section id="mission-vision" class="mission-vision">
+        <div class="container">
+            <div class="row align-items-center">
+                <!-- Left Side: Text Content -->
+                <div class="col-lg-6">
+                    <div class="text-content">
+                        <h2 class="text-primary">Our Mission</h2>
+                        <p>We empower individuals to grow fresh, organic vegetables in urban spaces. By providing eco-friendly farming solutions, we aim to make sustainable farming a reality for all.</p>
+                        
+                        <h2 class="text-primary">Our Vision</h2>
+                        <p>To create a future where every home, regardless of space constraints, can cultivate its own organic food, promoting sustainability and healthier communities.</p>
+                    </div>
+                </div>
+    
+                <!-- Right Side: Image -->
+                <div class="col-lg-6">
+                    <div class="image-container">
+                        <img src="img/Ndogofarm Plant (5).png" alt="Ndogo Farm" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    
+
+      <!----CORE VALUES---->
+
+      <!-- ======= core values Section ======= -->
+<section id="cta" class="cta" data-wow-delay="0.5s">
+    <div class="container" data-aos="zoom-in">
+  
+      <div class="row">
+        <div class="col-lg-9 text-center text-lg-start">
+          <h3>Core values</h3>
+          <br>
+  
+          <p> 
+  •Respect and value for local knowledge and innovations.
+  <br>
+  <br>
+  • Client First
+  <br>
+  <br>
+  • Professional, effective and informed by relevant science.
+  <br>
+  <br>
+  • Passion.
+  <br>
+  <br>
+  • Value for the environment and ecosystems
+   <br>
+  <br>
+  • Critical Review- unrelenting pursuit of excellence
+  <br>
+  <br>
+  • Creative, flexible and innovative
+          </p>
+        </div>
+        
+      </div>
+  
+    </div>
+</section>
+<!--Partner Section-->
+<section class="partners-section">
+    <div class="container">
+        <h2 class="partners-title">Our Partners</h2>
+        <div class="partners-carousel">
+            <div class="partners-track">
+                <img src="img/Partner 1.jpg" alt="Partner 1">
+                <img src="img/AWE.jpeg" alt="Partner 2">
+                <img src="img/Yepi.png" alt="Partner 3">
+                <img src="img/Partner2.jpg" alt="Partner 4">
+                <img src="img/partner3.jpg" alt="Partner 5">
+                <img src="img/AIF-2021.webp" alt="Partner 6">
+                <img src="img/African_Development_Foundation_logo.svg.png" alt="Partner 1">
+            </div>
+        </div>
+    </div>
+</section>
+</section>
+
+
+ <!-- Quote Start -->
+ <form action="https://formsubmit.co/ndogofarm@gmail.com" method="POST">
+    <div class="container-fluid quote my-5 py-5" data-parallax="scroll" style="background-color:var(--primary
+    );">
+       <div class="container py-5">
+           <div class="row justify-content-center">
+               <div class="col-lg-7">
+                   <div class="bg-white rounded p-4 p-sm-5 wow fadeIn" data-wow-delay="0.5s">
+                       <h1 class="display-5 text-center mb-5">Book Our Services </h1>
+                       <div class="row g-3">
+                           
+                           <div class="col-sm-6">
+                               <div class="form-floating">
+                                   <input type="text" class="form-control bg-light border-0" id="gname" placeholder="Gurdian Name">
+                                   <label for="gname">Your Name</label>
+                               </div>
+                           </div>
+                           <div class="col-sm-6">
+                               <div class="form-floating">
+                                   <input type="email" class="form-control bg-light border-0" id="gmail" placeholder="Gurdian Email">
+                                   <label for="gmail">Your Email</label>
+                               </div>
+                           </div>
+                           <div class="col-sm-6">
+                               <div class="form-floating">
+                                   <input type="text" class="form-control bg-light border-0" id="cname" placeholder="Child Name">
+                                   <label for="cname">Your Mobile</label>
+                               </div>
+                           </div>
+                           <div class="col-sm-6">
+                               <div class="form-floating">
+                                   <input type="text" class="form-control bg-light border-0" id="cage" placeholder="Child Age">
+                                   <label for="cage">Service Type</label>
+                               </div>
+                           </div>
+                           <div class="col-12">
+                               <div class="form-floating">
+                                   <textarea class="form-control bg-light border-0" placeholder="Leave a message here" id="message" style="height: 100px"></textarea>
+                                   <label for="message">Message</label>
+                               </div>
+                           </div>
+                           <div class="col-12 text-center">
+                               <button class="btn btn-primary py-3 px-4" type="submit">Submit Now</button>
+                           </div>
+                       </div>
+                   </div>
+               </div>
+           </div>
+       </div>
+   </div>
+</form>
+   <!-- Quote End -->
+
+
+
+    <!-- Footer Start -->
+    
+
+   
+    <div class="container-fluid bg-dark text-light footer mt-5 py-5 wow fadeIn" data-wow-delay="0.1s">
+
+    
+        <div class="container py-5">
+            <div class="row g-5">
+                <div class="col-lg-3 col-md-6" style="margin-left:10% ;">
+                    <h4 class="text-white mb-4">Our Office</h4>
+                    <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>Murang'a, kahatia</p>
+                    <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+254794311738</p>
+                    <p class="mb-2"><i class="fa fa-envelope me-3"></i>info@ndogofarms.co.ke</p>
+                    <div class="d-flex pt-2">
+                        <a class="btn btn-square btn-outline-light rounded-circle me-2" href="https://twitter.com/ndogofarm?t=SO1Aoh4FY5bNKgl4ywA5UA&s=09"><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-square btn-outline-light rounded-circle me-2" href="https://www.facebook.com/Ndogofarm?mibextid=ZbWKwL"><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-square btn-outline-light rounded-circle me-2" href="https://youtu.be/2FI4O4D2TKk"><i class="fab fa-youtube"></i></a>
+                        <a class="btn btn-square btn-outline-light rounded-circle me-2" href="https://www.linkedin.com/in/elizabeth-wambui-94472a126"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6" >
+                    <h4 class="text-white mb-4">Services</h4>
+                    <a class="btn btn-link" href="service.html">Vertical Farming</a>
+                    <a class="btn btn-link" href="service.html">Grow bags</a>
+                    <a class="btn btn-link" href="service.html">Living Walls</a>
+                    
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <h4 class="text-white mb-4">Quick Links</h4>
+                    <a class="btn btn-link" href="about.html">About Us</a>
+                    <a class="btn btn-link" href="contact.html">Contact Us</a>
+                    <a class="btn btn-link" href="service.html">Our Services</a>
+                    
+                </div>
+               
+               
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+        <!-- Copyright Start -->
+        <div class="container-fluid copyright py-4">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                        &copy; <a class="border-bottom" href="#">Ndogo farms</a>, All Right Reserved.
+                    </div>
+                    <div class="col-md-6 text-center text-md-end">
+                     
+                        Designed By:Infitech Innovation
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Copyright End -->
+
+          <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/parallax/parallax.min.js"></script>
+    <script src="lib/isotope/isotope.pkgd.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+    <script src=" https://smtpjs.com/v3/smtp.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+    <script>
+        //Partner Section
+        document.querySelector(".partners-carousel").addEventListener("mouseenter", function () {
+    document.querySelector(".partners-track").style.animationPlayState = "paused";
+});
+
+document.querySelector(".partners-carousel").addEventListener("mouseleave", function () {
+    document.querySelector(".partners-track").style.animationPlayState = "running";
+});
+        </script>
+</body>
+
+</html>

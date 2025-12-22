@@ -1,0 +1,1128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Ndogo farms</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@500;600;700&family=Open+Sans:wght@400;500&display=swap" rel="stylesheet">  
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+    <style>
+    .read_bt_1 a {
+    display: inline-block;
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #2d6a4f; /* Text color */
+    background: transparent;
+    border: 2px solid #2d6a4f; /* Border color */
+    border-radius: 8px;
+    text-decoration: none;
+    transition: border-color 0.3s, color 0.3s, box-shadow 0.3s;
+}
+
+.read_bt_1 a:hover {
+    border-color: #1b4332;
+    color: #1b4332;
+    box-shadow: 0 0 10px rgba(43, 102, 60, 0.5); /* Glow effect */
+}
+/*Kit*/
+/* Pricing Section */
+.pricing-section {
+    padding: 60px 20px;
+    background-color: #f8f8f8;
+    text-align: center;
+}
+
+/* Title */
+.section-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 40px;
+    color: #333;
+}
+
+/* Grid Layout */
+.pricing-grid {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+/* Pricing Cards */
+.pricing-card {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 350px;  /* Fixed width for uniformity */
+    text-align: center;
+    transition: transform 0.3s;
+    display: flex;
+    flex-direction: column;
+    height: 550px; /* Ensuring all cards have the same height */
+}
+
+.pricing-card:hover {
+    transform: scale(1.05);
+}
+
+/* Image Container */
+.card-img {
+    width: 100%;
+    height: 250px; /* Fixed height for all images */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.card-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures full image visibility */
+}
+
+/* Card Content */
+.card-content {
+    padding: 20px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Text Styling */
+.card-content h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.card-content h5 {
+    font-size: 1.2rem;
+    color: #27ae60;
+    margin-bottom: 10px;
+}
+
+/* List */
+.card-content ul {
+    list-style: none;
+    padding: 0;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.card-content ul li {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 5px;
+}
+
+/* Get Button */
+.btn-quote {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: white;
+    background-color: #27ae60;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background 0.3s;
+    align-self: center;
+}
+
+.btn-quote:hover {
+    background-color: #219150;
+}
+
+.fruite-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Image Zoom Effect */
+.fruite-item img {
+    transition: transform 0.4s ease-in-out;
+}
+
+.fruite-item:hover img {
+    transform: scale(1.1);
+}
+
+/* Floating Animation */
+@keyframes floating {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-5px); }
+    100% { transform: translateY(0); }
+}
+
+.fruite-item {
+    animation: floating 3s infinite ease-in-out;
+}
+
+/* Buy Button Hover Effect */
+.buy-btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 15px;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 5px;
+    color: #fff;
+    background-color: #27ae60;
+    text-decoration: none;
+    transition: transform 0.2s ease-in-out, background 0.3s ease-in-out;
+}
+
+.buy-btn:hover {
+    background-color: #219150;
+    transform: scale(1.1);
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+    .pricing-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+    .pricing-card {
+        width: 100%;
+        max-width: 350px;
+    }
+}
+
+/***About Animation***/
+.about_section {
+        opacity: 0;
+        transform: translateY(50px);
+        transition: opacity 1s ease-out, transform 1s ease-out;
+    }
+
+    .about_section.animate {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    /* Image Animation */
+    .about_img img {
+        opacity: 0;
+        transform: scale(0.8);
+        transition: opacity 1.2s ease-out, transform 1.2s ease-out;
+    }
+
+    .about_section.animate .about_img img {
+        opacity: 1;
+        transform: scale(1);
+    }
+
+    /* Text Animation */
+    .about_taital,
+    .about_text {
+        opacity: 0;
+        transform: translateX(-50px);
+        transition: opacity 1.2s ease-out, transform 1.2s ease-out;
+    }
+
+    .about_section.animate .about_taital,
+    .about_section.animate .about_text {
+        opacity: 1;
+        transform: translateX(0);
+    }
+
+    /* Button Animation */
+    .read_bt_1 {
+        opacity: 0;
+        transform: translateY(20px);
+        transition: opacity 1.2s ease-out 0.3s, transform 1.2s ease-out 0.3s;
+    }
+
+    .about_section.animate .read_bt_1 {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    </style>
+    
+</head>
+
+<body>
+    <!-- Spinner Start -->
+    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-border text-primary" role="status" style="width: 3rem; height: 3rem;"></div>
+    </div>
+    <!-- Spinner End -->
+
+
+    <!-- Topbar Start -->
+    <div class="container-fluid bg-dark text-light px-0 py-2">
+        <div class="row gx-0 d-none d-lg-flex">
+            <div class="col-lg-7 px-5 text-start">
+                <div class="h-100 d-inline-flex align-items-center me-4">
+                    <span class="fa fa-phone-alt me-2"></span>
+                    <span>+254794311738</span>
+                </div>
+                <div class="h-100 d-inline-flex align-items-center">
+                    <span class="far fa-envelope me-2"></span>
+                    <span>info@ndogofarms.co.ke</span>
+                </div>
+            </div>
+            <div class="col-lg-5 px-5 text-end">
+                <div class="h-100 d-inline-flex align-items-center mx-n2">
+                    <span>Follow Us:</span>
+                    <a class="btn btn-link text-light" target="_blank" href="https://www.facebook.com/Ndogofarm?mibextid=ZbWKwL"><i class="fab fa-facebook-f"></i></a>
+                    <a class="btn btn-link text-light" target="_blank" href="https://twitter.com/ndogofarm?s=20&t=lgZoV5f4JSq6gzsXuqDlmg"><i class="fab fa-twitter"></i></a>
+
+                    <a class="btn btn-link text-light" target="_blank" href="https://www.instagram.com/ndogo_farms?igsh=MWI4Y2NzY2dhaTk3eA=="><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Topbar End -->
+
+
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top p-0">
+        <a href="index.html" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
+            <div id="logo-img">
+                <img src="img/newlogobg.png" style="height: 175%; width: auto; position: relative; top: 8.5px">
+
+
+            </div>
+        </a>
+        <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav ms-auto p-4 p-lg-0" >
+                <a href="index.html" class="nav-item nav-link active">Home</a>
+                <a href="about.html" class="nav-item nav-link">About</a>
+                <a href="service.html" class="nav-item nav-link">Services</a>
+                <a href="project.html" class="nav-item nav-link">Projects</a>
+                <a href="companion.html" class="nav-item nav-link">Companion</a>
+                <a href="contact.html" class="nav-item nav-link">Contact</a>
+            </div>        </div>
+    </nav>
+    <!-- Navbar End -->
+
+
+    <!-- Carousel Start -->
+    <div class="container-fluid p-0 wow fadeIn" data-wow-delay="0.1s" style="overflow: hidden; width: 100%;">
+     <div id="header-carousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+     <div class="carousel-item active">
+    <div class="video-container">
+    <video autoplay loop muted playsinline>
+    <source src="https://res.cloudinary.com/drselhsl4/video/upload/v1766322480/NdogoFarms/video/egblwygmqmtkpypqqwvh.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+    </video>
+     </div>
+    <div class="carousel-caption" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); text-align: center; width: 90%; max-width: 800px; background: none !important;">
+    <div class="container-fluid">
+    <div class="row justify-content-center">
+    <div class="col-12">
+   <h1 class="text-white mb-3 mb-md-5 animated slideInDown" style="font-weight: bold;">Small Space? Big Harvest!</h1>
+    <a href="service.html" class="btn btn-primary py-2 py-sm-3 px-3 px-sm-4">Explore More</a>
+    </div>
+ </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+ </div>
+        
+    <!-- Carousel End -->
+
+
+    <!-- Top Feature Start -->
+    <div class="container-fluid top-feature py-5 pt-lg-0">
+        <div class="container py-5 pt-lg-0">
+            <div class="row gx-0">
+                <div class="col-lg-4 wow fadeIn" data-wow-delay="0.1s">
+                    <div class="bg-white shadow d-flex align-items-center h-100 px-2" style="min-height: 160px;">
+                        <div class="d-flex">
+                            <div class="flex-shrink-0 btn-lg-square rounded-circle bg-light">
+                                <i class="fa fa-smile text-primary"></i>
+                            </div>
+                            <div class="ps-3">
+                                <h4>Affordable Cost</h4>
+                                <span>We assure our clients of affordable services.</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 wow fadeIn" data-wow-delay="0.3s">
+                    <div class="bg-white shadow d-flex align-items-center h-100 px-2" style="min-height: 160px;">
+                        <div class="d-flex">
+                            <div class="flex-shrink-0 btn-lg-square rounded-circle bg-light">
+                                <i class="fa fa-leaf text-primary"></i>
+                            </div>
+                            <div class="ps-3">
+                                <h4>Recycle, Renew, Reuse</h4>
+                                <span>We use recycled products fostering our Green-energy campaign.</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 wow fadeIn" data-wow-delay="0.5s">
+                    <div class="bg-white shadow d-flex align-items-center h-100 px-2" style="min-height: 160px;">
+                        <div class="d-flex">
+                            <div class="flex-shrink-0 btn-lg-square rounded-circle bg-light">
+                                <i class="fa fa-phone text-primary"></i>
+                            </div>
+                            <div class="ps-3">
+                                <h4>Turn-around Time</h4>
+                                <span>We are available both online and offline, reach us at  working hours time.</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Top Feature End -->
+
+
+    <!-- About Start -->
+    <div class="about_section layout_padding" style="padding-top: 50px; padding-bottom: 20px;">
+    <div class="container">
+    <div class="row align-items-center">
+    <div class="col-md-6">
+     <div class="about_img" style="height: 100%; display: flex; align-items: stretch;">
+    <img src="img/Ndogofarm Plant (5).png" style="width: 100%; height: auto; max-height: 500px; object-fit: cover;">
+    </div>
+ </div>
+  <div class="col-md-6">
+ <h1 class="about_taital">About NdogoFarm</h1>
+<p class="about_text" style="margin-bottom: 0;">At Ndogo Farms, we make urban farming effortless. Whether you have a balcony, rooftop, or a small backyard, we provide eco-friendly <b>grow bags,</b>  <b>raised beds,</b> and <b>vertical gardens </b>to help you grow fresh, organic veggies at home.
+
+    With organic soil, fertilizers, and natural pest control, we ensure your food is chemical-free and nutrient-rich.</p>
+ <div class="read_bt_1" style="margin-top: 10px;"><a href="about.html">Read More</a></div>
+</div>
+</div>
+</div>
+</div>
+    <!-- About End -->
+     <!-- Service Start -->
+     <div class="container-xxl py-5" style="background-color: #f5f5f5;">
+        <div class="container">
+            <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
+                <h1 class="display-4 text-primary fw-bold">What We Offer</h1>
+            </div>
+    
+            <!-- Tabs Navigation -->
+            <ul class="nav nav-pills justify-content-center my-4">
+                <li class="nav-item">
+                    <a class="nav-link active" data-bs-toggle="pill" href="#gardening">Urban Gardening Solutions</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-bs-toggle="pill" href="#organic">Organic Farming Inputs</a>
+                </li>
+            </ul>
+    
+            <div class="tab-content">
+                <!-- Urban Gardening Solutions -->
+                <div id="gardening" class="tab-pane fade show active">
+                    <div class="row g-4">
+                        <div class="col-lg-4 col-md-6">
+                            <div class="service-item rounded d-flex h-100">
+                                <div class="service-img rounded">
+                                    <img class="img-fluid" src="img/grow bag 3.jpg" alt="Grow Bags">
+                                </div>
+                                <div class="service-text rounded p-4">
+                                    <h4 class="mb-3">Grow Bags</h4>
+                                    <p class="mb-0">Portable with air-pruning properties to ensure healthy root growth.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <div class="service-item rounded d-flex h-100">
+                                <div class="service-img rounded">
+                                    <img class="img-fluid" src="img/Product2.jpg" alt="Raised Beds">
+                                </div>
+                                <div class="service-text rounded p-4">
+                                    <h4 class="mb-3">Raised Beds</h4>
+                                    <p class="mb-0">Space-saving, easy-to-maintain gardening for urban homes.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <div class="service-item rounded d-flex h-100">
+                                <div class="service-img rounded">
+                                    <img class="img-fluid" src="img/Vertical Farm 1.jpg" alt="Vertical Gardens">
+                                </div>
+                                <div class="service-text rounded p-4">
+                                    <h4 class="mb-3">Vertical Gardens</h4>
+                                    <p class="mb-0">Compact gardens designed for small urban spaces.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Organic Farming Inputs -->
+                <div id="organic" class="tab-pane fade">
+                    <div class="row g-4">
+                        <div class="col-lg-4 col-md-6">
+                            <div class="service-item rounded d-flex h-100">
+                                <div class="service-img rounded">
+                                    <img class="img-fluid" src="img/pottingsoil.jpeg" alt="Organic Potting Mix">
+                                </div>
+                                <div class="service-text rounded p-4">
+                                    <h4 class="mb-3">Organic Potting Mix</h4>
+                                    <p class="mb-0">Nutrient-rich soil for healthy plant growth.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <div class="service-item rounded d-flex h-100">
+                                <div class="service-img rounded">
+                                    <img class="img-fluid" src="img/soilbg3.jpeg" alt="Organic Fertilizers">
+                                </div>
+                                <div class="service-text rounded p-4">
+                                    <h4 class="mb-3">Organic Fertilizers</h4>
+                                    <p class="mb-0">Natural fertilizers to boost plant health.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <div class="service-item rounded d-flex h-100">
+                                <div class="service-img rounded">
+                                    <img class="img-fluid" src="img/organic pest.jpeg" alt="Organic Pesticides">
+                                </div>
+                                <div class="service-text rounded p-4">
+                                    <h4 class="mb-3">Organic Pesticides</h4>
+                                    <p class="mb-0">Chemical-free pest control for safe and healthy crops.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Contact Us Button -->
+            <div class="text-center mt-5">
+                <a href="https://wa.me/254708533033?text=Hello, I'm interested in learning more about your services!" target="_blank" 
+                   style="display: inline-block; padding: 12px 30px; font-size: 16px; font-weight: bold; border-radius: 5px; color: #fff; background-color: #27ae60; text-decoration: none;">
+                    Contact Us
+                </a>
+            </div>
+        </div> 
+    </div>
+    
+    
+    <!-- Service End -->
+
+
+
+    <!-- Facts Start -->
+    <div class="container-fluid facts my-5 py-5" 
+    style="background: url('img/soilbg3.jpeg') center/cover no-repeat; 
+           position: relative; 
+           z-index: 1; 
+           padding: 100px 0;">
+    <!-- Overlay to Enhance Text Visibility -->
+    <div style="position: absolute; 
+                top: 0; left: 0; 
+                width: 100%; height: 100%; 
+                background: rgba(0.5, 0.5, 0, 0.5); 
+                z-index: -1;">
+    </div>
+
+    <div class="container py-5">
+        <div class="row g-5">
+            <div class="col-sm-6 col-lg-7 text-center wow fadeIn" data-wow-delay="0.1s">
+                <h1 class="display-4 text-white" data-toggle="counter-up">200</h1>
+                <span class="fs-5 fw-semi-bold text-light">Households reached</span>
+            </div>
+            <div class="col-sm-6 col-lg-3 text-center wow fadeIn" data-wow-delay="0.3s">
+                <h1 class="display-4 text-white" data-toggle="counter-up">350</h1>
+                <span class="fs-5 fw-semi-bold text-light">350+ Completed products.</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <!-- Facts End -->
+<!---Product Start-->
+<div class="container-fluid fruite py-5" style="background-color: #f8f9fa; padding: 50px 0;">
+    <div class="container py-5">
+        <div class="text-center" style="margin-bottom: 40px;">
+            <h1 style="font-size: 32px; font-weight: bold; color: #333;">Shop With Us</h1>
+        </div>
+        
+        <!-- Products Grid -->
+        <div class="row g-4">
+            <!-- First Row -->
+            <div class="col-md-6 col-lg-3">
+                <div class="fruite-item" style="background: #fff; padding: 15px; border-radius: 10px; text-align: center; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); transition: transform 0.3s;">
+                    <img src="img/growbag.jpg" class="img-fluid w-100" style="border-radius: 10px; margin-bottom: 10px;" alt="Oranges">
+                    <h4 style="font-size: 18px; font-weight: bold; color: #333;">Grow Bag</h4>
+                    <h5 style="font-size: 16px; font-weight: bold; color: #333;">H-12 inches, C-50 inches</h5>
+                    <p style="font-size: 16px; font-weight: bold; color: #27ae60;">Ksh 800</p>
+                    <a href="#" class="buy-btn" 
+                    style="display: inline-block; margin-top: 10px; padding: 8px 15px; font-size: 14px; font-weight: bold; border-radius: 5px; color: #fff; background-color: #27ae60; text-decoration: none;">
+                    Buy
+                 </a>
+                 
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-3">
+                <div class="fruite-item" style="background: #fff; padding: 15px; border-radius: 10px; text-align: center; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); transition: transform 0.3s;">
+                    <img src="img/smallgrwbag.jpg" class="img-fluid w-100" style="border-radius: 10px; margin-bottom: 10px;" alt="Raspberries">
+                    <h4 style="font-size: 18px; font-weight: bold; color: #333;">Grow Bag</h4>
+                    <h5 style="font-size: 16px; font-weight: bold; color: #333;">H-10 inches,C-43 inches</h5>
+                    <p style="font-size: 16px; font-weight: bold; color: #27ae60;">Ksh 650</p>
+                    <a href="#" class="buy-btn" 
+   style="display: inline-block; margin-top: 10px; padding: 8px 15px; font-size: 14px; font-weight: bold; border-radius: 5px; color: #fff; background-color: #27ae60; text-decoration: none;">
+   Buy
+</a>
+
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+                <div class="fruite-item" style="background: #fff; padding: 15px; border-radius: 10px; text-align: center; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); transition: transform 0.3s;">
+                    <img src="img/product7.jpg" class="img-fluid w-100" style="border-radius: 10px; margin-bottom: 10px;" alt="Apple">
+                    <h4 style="font-size: 18px; font-weight: bold; color: #333;">Grow Bag</h4>
+                    <h5 style="font-size: 16px; font-weight: bold; color: #333;">H-8 inches,C-40 inches</h5>
+                    <p style="font-size: 16px; font-weight: bold; color: #27ae60;">Ksh 400</p>
+                    <a href="#" class="buy-btn" 
+                    style="display: inline-block; margin-top: 10px; padding: 8px 15px; font-size: 14px; font-weight: bold; border-radius: 5px; color: #fff; background-color: #27ae60; text-decoration: none;">
+                    Buy
+                 </a>
+                 
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-3">
+                <div class="fruite-item" style="background: #fff; padding: 15px; border-radius: 10px; text-align: center; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); transition: transform 0.3s;">
+                    <img src="img/bigraised.jpg" class="img-fluid w-100" style="border-radius: 10px; margin-bottom: 10px;" alt="Banana">
+                    <h4 style="font-size: 18px; font-weight: bold; color: #333;">Raised Bed</h4>
+                    <h5 style="font-size: 16px; font-weight: bold; color: #333;">H-10 inches, C-120 inches</h5>
+                    <p style="font-size: 16px; font-weight: bold; color: #27ae60;">Ksh 3500</p>
+                    <a href="#" class="buy-btn" 
+   style="display: inline-block; margin-top: 10px; padding: 8px 15px; font-size: 14px; font-weight: bold; border-radius: 5px; color: #fff; background-color: #27ae60; text-decoration: none;">
+   Buy
+</a>
+
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-3">
+                <div class="fruite-item" style="background: #fff; padding: 15px; border-radius: 10px; text-align: center; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); transition: transform 0.3s;">
+                    <img src="img/mini-raised-bed.jpg" class="img-fluid w-100" style="border-radius: 10px; margin-bottom: 10px;" alt="Apricots">
+                    <h4 style="font-size: 18px; font-weight: bold; color: #333;">Raised Bed</h4>
+                    <h5 style="font-size: 16px; font-weight: bold; color: #333;">H-10 inches,C-80 inches</h5>
+                    <p style="font-size: 16px; font-weight: bold; color: #27ae60;">Ksh 2500</p>
+                    <a href="#" class="buy-btn" 
+   style="display: inline-block; margin-top: 10px; padding: 8px 15px; font-size: 14px; font-weight: bold; border-radius: 5px; color: #fff; background-color: #27ae60; text-decoration: none;">
+   Buy
+</a>
+
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+                <div class="fruite-item" style="background: #fff; padding: 15px; border-radius: 10px; text-align: center; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); transition: transform 0.3s;">
+                    <img src="img/rect.jpg" class="img-fluid w-100" style="border-radius: 10px; margin-bottom: 10px;" alt="Apple">
+                    <h4 style="font-size: 18px; font-weight: bold; color: #333;">Rectangular Raised Bed</h4>
+                   
+                    <p style="font-size: 16px; font-weight: bold; color: #27ae60;">Ksh 3500</p>
+                    <a href="#" class="buy-btn" 
+                    style="display: inline-block; margin-top: 10px; padding: 8px 15px; font-size: 14px; font-weight: bold; border-radius: 5px; color: #fff; background-color: #27ae60; text-decoration: none;">
+                    Buy
+                 </a>
+                 
+                </div>
+            </div>
+
+            <!-- Second Row -->
+            <div class="col-md-6 col-lg-3">
+                <div class="fruite-item" style="background: #fff; padding: 15px; border-radius: 10px; text-align: center; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); transition: transform 0.3s;">
+                    <img src="img/product5.jpg" class="img-fluid w-100" style="border-radius: 10px; margin-bottom: 10px;" alt="Grapes">
+                    <h4 style="font-size: 18px; font-weight: bold; color: #333;">Mini Vertical garden</h4>
+                    <br>
+                    <p style="font-size: 16px; font-weight: bold; color: #27ae60;">Ksh 1000</p>
+                    <a href="#" class="buy-btn" 
+   style="display: inline-block; margin-top: 10px; padding: 8px 15px; font-size: 14px; font-weight: bold; border-radius: 5px; color: #fff; background-color: #27ae60; text-decoration: none;">
+   Buy
+</a>
+
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+                <div class="fruite-item" style="background: #fff; padding: 15px; border-radius: 10px; text-align: center; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); transition: transform 0.3s;">
+                    <img src="img/product8.jpg" class="img-fluid w-100" style="border-radius: 10px; margin-bottom: 10px;" alt="Apple">
+                    <h4 style="font-size: 18px; font-weight: bold; color: #333;">Potatoes Bag</h4>
+                    <br>
+                    <p style="font-size: 16px; font-weight: bold; color: #27ae60;">Ksh 1500</p>
+                    <a href="#" class="buy-btn" 
+   style="display: inline-block; margin-top: 10px; padding: 8px 15px; font-size: 14px; font-weight: bold; border-radius: 5px; color: #fff; background-color: #27ae60; text-decoration: none;">
+   Buy
+</a>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <!-- Features Start -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="row g-5 align-items-center">
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <p class="fs-5 fw-bold text-primary">Why Choose Us!</p>
+                    <h1 class="display-5 mb-4">Few Reasons For Choosing Us!</h1>
+                    <p class="mb-4">It’s our attention to the small gardeners, scheduling of timelines and keen project management that makes us stand out from the rest. We are creative, while keeping a close eye on the calendar and your budget.</p>
+                    <a class="btn btn-primary py-3 px-4" href="service.html">Explore More</a>
+                </div>
+                <div class="col-lg-6">
+                    <div class="row g-4 align-items-center">
+                        <div class="col-md-6">
+                            <div class="row g-4">
+                                <div class="col-12 wow fadeIn" data-wow-delay="0.3s">
+                                    <div class="text-center rounded py-5 px-4" style="box-shadow: 0 0 45px rgba(0,0,0,.08);">
+                                        <div class="btn-square bg-light rounded-circle mx-auto mb-4" style="width: 90px; height: 90px;">
+                                            <i class="fa fa-check fa-3x text-primary"></i>
+                                        </div>
+                                        <h4 class="mb-0">100% Satisfaction</h4>
+                                    </div>
+                                </div>
+                                <div class="col-12 wow fadeIn" data-wow-delay="0.5s">
+                                    <div class="text-center rounded py-5 px-4" style="box-shadow: 0 0 45px rgba(0,0,0,.08);">
+                                        <div class="btn-square bg-light rounded-circle mx-auto mb-4" style="width: 90px; height: 90px;">
+                                            <i class="fa fa-users fa-3x text-primary"></i>
+                                        </div>
+                                        <h4 class="mb-0">Environmental Friendly</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 wow fadeIn" data-wow-delay="0.7s">
+                            <div class="text-center rounded py-5 px-4" style="box-shadow: 0 0 45px rgba(0,0,0,.08);">
+                                <div class="btn-square bg-light rounded-circle mx-auto mb-4" style="width: 90px; height: 90px;">
+                                    <i class="fa fa-tools fa-3x text-primary"></i>
+                                </div>
+                                <h4 class="mb-0">Modern Equipment</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Features End -->
+
+<!--New Projects-->
+<div style="width: 100%; overflow: hidden; position: relative; padding: 40px 0; background: #ffffff;">
+    <h2 style="text-align: center; font-size: 24px; margin-bottom: 20px; font-weight: bold;">Our Recent Projects</h2>
+
+    <div style="display: flex; align-items: center; justify-content: center; gap: 10px;">
+        <button onclick="prevSlide()" style="border: none; background: none; font-size: 30px; cursor: pointer;">⬅</button>
+        
+        <div style="width: 70%; overflow: hidden; position: relative;">
+            <div id="slider" style="display: flex; width: 150%; transition: transform 1.5s ease-in-out;">
+                <img src="img/prjct1.jpg" style="width: 25%; object-fit: cover; padding: 5px;">
+                <img src="img/prjct2.jpg" style="width: 25%; object-fit: cover; padding: 5px;">
+                <img src="img/prjct3.jpg" style="width: 25%; object-fit: cover; padding: 5px;">
+                <img src="img/prjct4.jpg" style="width: 25%; object-fit: cover; padding: 5px;">
+                <img src="img/prjct5.jpg" style="width: 25%; object-fit: cover; padding: 5px;">
+                <img src="img/prjct1.jpg" style="width: 25%; object-fit: cover; padding: 5px;">
+            </div>
+        </div>
+
+        <button onclick="nextSlide()" style="border: none; background: none; font-size: 30px; cursor: pointer;">➡</button>
+    </div>
+</div>
+
+<!--Kit start--> 
+<div class="pricing-section">
+    <div class="container">
+        <h1 class="section-title">Get your kit</h1>
+        <div class="pricing-grid">
+            <!-- Card 1 -->
+            <div class="pricing-card">
+                <div class="card-img">
+                    <img src="img/kit1.jpg" alt="Vertical Farming">
+                </div>
+                <div class="card-content">
+                    <h2>3ft Double Stand</h2>
+                    <h5><strong>Ksh 18,000</strong></h5>
+                    <ul>
+                        <li>6 grow bags</li>
+                        <li>1 bag potting Mix</li>
+                        <li>I ltr organic pesticide</li>
+                        <li>2Kg Organic Fertilizer</li>
+                        <li> Mini hand pump</li>
+                    </ul>
+                    <a href="#" class="btn-quote" onclick="sendToWhatsApp(this)" data-name="3ft Double Stand" data-price="Ksh 18,000" data-description="6 grow bags, 1 bag potting Mix, 1 ltr organic pesticide, 2Kg Organic Fertilizer, Mini hand pump" data-image="img/kit1.jpg">
+                        Get
+                    </a>
+                    
+                </div>
+            </div>
+            <!-- Card 2 -->
+            <div class="pricing-card">
+                <div class="card-img">
+                    <img src="img/kit2.jpg" alt="Growing Bags">
+                </div>
+                <div class="card-content">
+                    <h2>5ft Double stand</h2>
+                    <h5><strong>Ksh 25,000</strong></h5>
+                    <ul>
+                        <li>10 grow bags</li>
+                        <li>2 bag potting Mix</li>
+                        <li>I ltr organic pesticide</li>
+                        <li>4kg Organic Fertilizer</li>
+                        <li> Mini hand pump</li>
+                    </ul>
+                    <a href="#" class="btn-quote" onclick="sendToWhatsApp(this)" data-name="3ft Double Stand" data-price="Ksh 18,000" data-description="6 grow bags, 1 bag potting Mix, 1 ltr organic pesticide, 2Kg Organic Fertilizer, Mini hand pump" data-image="img/kit1.jpg">
+                        Get
+                    </a>
+                    
+                </div>
+            </div>
+            <!-- Card 3 -->
+            <div class="pricing-card">
+                <div class="card-img">
+                    <img src="img/kit3.jpg" alt="Living Walls">
+                </div>
+                <div class="card-content">
+                    <h2>5ft triple stand</h2>
+                    <h5><strong>Ksh 40,000</strong></h5>
+                    <ul>
+                        <li>15 grow bags</li>
+                        <li>4 bag potting Mix</li>
+                        <li>I ltr organic pesticide</li>
+                        <li>I ltr organic foliar pesticide</li>
+                        <li>4kg Organic Fertilizer</li>
+                        <li> Mini hand pump</li>
+                    </ul>
+                    <a href="#" class="btn-quote" onclick="sendToWhatsApp(this)" data-name="3ft Double Stand" data-price="Ksh 18,000" data-description="6 grow bags, 1 bag potting Mix, 1 ltr organic pesticide, 2Kg Organic Fertilizer, Mini hand pump" data-image="img/kit1.jpg">
+                        Get
+                    </a>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!--Kit End-->
+
+   <!-- Quote Start -->
+   <form action="https://formsubmit.co/ndogofarm@gmail.com" method="POST" id="quote">
+    <div class="container-fluid quote my-5 py-5" data-parallax="scroll" style="background-color:var(--primary
+    );">
+       <div class="container py-5">
+           <div class="row justify-content-center">
+               <div class="col-lg-7">
+                   <div class="bg-white rounded p-4 p-sm-5 wow fadeIn" data-wow-delay="0.5s">
+                       <h1 class="display-5 text-center mb-5">Book Our Services </h1>
+                       <div class="row g-3">
+                           
+                           <div class="col-sm-6">
+                               <div class="form-floating">
+                                   <input type="text" class="form-control bg-light border-0" id="gname" placeholder="Gurdian Name">
+                                   <label for="gname">Your Name</label>
+                               </div>
+                           </div>
+                           <div class="col-sm-6">
+                               <div class="form-floating">
+                                   <input type="email" class="form-control bg-light border-0" id="gmail" placeholder="Gurdian Email">
+                                   <label for="gmail">Your Email</label>
+                               </div>
+                           </div>
+                           <div class="col-sm-6">
+                               <div class="form-floating">
+                                   <input type="text" class="form-control bg-light border-0" id="cname" placeholder="Child Name">
+                                   <label for="cname">Your Mobile</label>
+                               </div>
+                           </div>
+                           <div class="col-sm-6">
+                               <div class="form-floating">
+                                   <input type="text" class="form-control bg-light border-0" id="cage" placeholder="Child Age">
+                                   <label for="cage">Service Type</label>
+                               </div>
+                           </div>
+                           <div class="col-12">
+                               <div class="form-floating">
+                                   <textarea class="form-control bg-light border-0" placeholder="Leave a message here" id="message" style="height: 100px"></textarea>
+                                   <label for="message">Message</label>
+                               </div>
+                           </div>
+                           <div class="col-12 text-center">
+                               <button class="btn btn-primary py-3 px-4" type="submit">Submit Now</button>
+                           </div>
+                       </div>
+                   </div>
+               </div>
+           </div>
+       </div>
+   </div>
+</form>
+   <!-- Quote End -->
+
+
+    <!-- Testimonial Start -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-5 wow fadeInUp" data-wow-delay="0.1s">
+                    <p class="fs-5 fw-bold text-primary">Testimonial</p>
+                    <h1 class="display-5 mb-5">What Our Clients Say About Us!</h1>
+                    <p class="mb-4">Here’s what some of our clients had to say about us.</p>
+                   
+                </div>
+                <div class="col-lg-7 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="owl-carousel testimonial-carousel">
+                        <div class="testimonial-item">
+                            <h4>Shamayel Karani</h4>
+                            <p class="fs-5">I love the fact that i can plant my own herbs at home with ease of management.Your  products are durable and the fact you trained me to manage my plants was so beneficial </p>
+                            <h4>One word description of the service</h4>
+                            <span>Mindblowing</span>
+        
+                </div>
+                        <div class="testimonial-item">
+                            <h4>Justine Njuguna</h4>
+                            <p class="fs-5">I am amazed with how you have a customer relationship with your clients.I love the fact that i can plant my own vagetables in my small garden</p>
+                            <h4>One word description of the service</h4>
+                            <span>adoration</span>
+                        </div>
+                        <div class="testimonial-item">
+                            <h4>Ilhan Mohammed</h4>
+                            
+                        <p class="fs-5">As a eco-activist i am happy that ndogo farms uses environmental friendly products.I appreciate your good services</p>
+                        <h4>One word description of the service</h4>
+                            <span>Empowering</span>
+        
+                            </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Testimonial End -->
+
+
+    <!-- Footer Start -->
+    
+
+   
+    <div class="container-fluid bg-dark text-light footer mt-5 py-5 wow fadeIn" data-wow-delay="0.1s">
+
+    
+        <div class="container py-5">
+            <div class="row g-5">
+                <div class="col-lg-3 col-md-6" style="margin-left:10% ;">
+                    <h4 class="text-white mb-4">Our Office</h4>
+                    <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>Murang'a, kahatia</p>
+                    <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+254794311738</p>
+                    <p class="mb-2"><i class="fa fa-envelope me-3"></i>info@ndogofarms.co.ke</p>
+                    <div class="d-flex pt-2">
+                        <a class="btn btn-square btn-outline-light rounded-circle me-2" href="https://twitter.com/ndogofarm?t=SO1Aoh4FY5bNKgl4ywA5UA&s=09"><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-square btn-outline-light rounded-circle me-2" href="https://www.facebook.com/Ndogofarm?mibextid=ZbWKwL"><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-square btn-outline-light rounded-circle me-2" href="https://youtu.be/2FI4O4D2TKk"><i class="fab fa-youtube"></i></a>
+                        <a class="btn btn-square btn-outline-light rounded-circle me-2" href="https://www.linkedin.com/in/elizabeth-wambui-94472a126"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6" >
+                    <h4 class="text-white mb-4">Services</h4>
+                    <a class="btn btn-link" href="service.html">Vertical Farming</a>
+                    <a class="btn btn-link" href="service.html">Grow bags</a>
+                    <a class="btn btn-link" href="service.html">Living Walls</a>
+                    
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <h4 class="text-white mb-4">Quick Links</h4>
+                    <a class="btn btn-link" href="about.html">About Us</a>
+                    <a class="btn btn-link" href="contact.html">Contact Us</a>
+                    <a class="btn btn-link" href="service.html">Our Services</a>
+                    
+                </div>
+               
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+
+    <!-- Copyright Start -->
+    <div class="container-fluid copyright py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                    &copy; <a class="border-bottom" href="#">Ndogo farms</a>, All Right Reserved.
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
+                    Designed By:Infitech Innovtion
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Copyright End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/parallax/parallax.min.js"></script>
+    <script src="lib/isotope/isotope.pkgd.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+    <script>
+        let index = 0;
+        const totalSlides = document.querySelectorAll("#slider img").length - 3; // Ensures 4 images are visible at a time
+        const slider = document.getElementById("slider");
+    
+        function showSlide() {
+            if (index > totalSlides) {
+                index = 0;
+            } else if (index < 0) {
+                index = totalSlides;
+            }
+            slider.style.transform = `translateX(-${index * 25}%)`;
+        }
+    
+        function nextSlide() {
+            index++;
+            showSlide();
+        }
+    
+        function prevSlide() {
+            index--;
+            showSlide();
+        }
+    
+        function autoScroll() {
+            index++;
+            showSlide();
+        }
+    
+        setInterval(autoScroll, 4000); // Auto-scroll every 4 seconds
+
+        //Buy Script
+        document.addEventListener("DOMContentLoaded", function() {
+    let buttons = document.querySelectorAll(".buy-btn");
+
+    buttons.forEach(button => {
+        button.addEventListener("click", function(event) {
+            event.preventDefault(); // Prevent normal link behavior
+            
+            let productCard = this.closest(".fruite-item"); // Get the closest product card
+            let productName = productCard.querySelector("h4").innerText;
+            let productSize = productCard.querySelector("h5") ? productCard.querySelector("h5").innerText : "";
+            let productPrice = productCard.querySelector("p").innerText;
+            let productImage = productCard.querySelector("img").getAttribute("src");
+
+            // Replace with your WhatsApp number
+            let phoneNumber = "254794311738";
+            
+            let message = `I'm interested in the *${productName}* ${productSize} - ${productPrice}.\n\nImage: ${window.location.origin}/${productImage}`;
+
+            let whatsappLink = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+            
+            // Open WhatsApp link in a new tab
+            window.open(whatsappLink, "_blank");
+        });
+    });
+});
+//animate Buy section
+document.addEventListener("DOMContentLoaded", function () {
+    const cards = document.querySelectorAll(".fruite-item");
+
+    cards.forEach((card, index) => {
+        card.style.opacity = 0;
+        card.style.transform = "translateY(20px)";
+
+        setTimeout(() => {
+            card.style.transition = "opacity 0.6s ease-in-out, transform 0.6s ease-in-out";
+            card.style.opacity = 1;
+            card.style.transform = "translateY(0)";
+        }, index * 150);
+    });
+});
+
+//Kit Script
+function sendToWhatsApp(element) {
+    var phoneNumber = "254794311738";
+    var productName = element.getAttribute("data-name");
+    var productPrice = element.getAttribute("data-price");
+    var productDescription = element.getAttribute("data-description");
+    var productImage = window.location.origin + "/" + element.getAttribute("data-image"); // Ensure full URL
+
+    var message = `I'm interested in the *${productName}* \n\n💰 *Price:* ${productPrice} \n📦 *Includes:* ${productDescription} \n🖼️ *Image:* ${productImage}`;
+    
+    var whatsappURL = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+    
+    window.open(whatsappURL, '_blank');
+}
+
+//Aoout Animation
+    document.addEventListener("DOMContentLoaded", function () {
+        const aboutSection = document.querySelector(".about_section");
+
+        const observer = new IntersectionObserver(
+            (entries, observer) => {
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting) {
+                        aboutSection.classList.add("animate");
+                        observer.unobserve(entry.target); // Stop observing once animated
+                    }
+                });
+            },
+            { threshold: 0.3 } // Triggers when 30% of the section is visible
+        );
+
+        observer.observe(aboutSection);
+    });
+
+
+    </script>
+</body>
+
+</html>
