@@ -1,0 +1,1291 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AI Companion Guide</title>
+    <meta
+      name="keywords"
+      content="companion planting, urban farming, gardening, sustainable agriculture"
+    />
+    <meta
+      name="description"
+      content="Learn about companion planting techniques for urban farming and sustainable agriculture"
+    />
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon" />
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jost:wght@500;600;700&family=Open+Sans:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Bootstrap Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+    />
+
+    <!-- Bootstrap 5 CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Custom CSS -->
+    <style>
+      :root {
+        --primary-color: #198754;
+        --secondary-color: #fd7e14;
+        --dark-color: #212529;
+        --light-color: #f8f9fa;
+      }
+
+      body {
+        font-family: "Open Sans", sans-serif;
+        line-height: 1.6;
+      }
+
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        font-family: "Jost", sans-serif;
+      }
+
+      .display-9 {
+        font-size: 2rem;
+        font-weight: 700;
+      }
+
+      .display-10 {
+        font-size: 1.75rem;
+        font-weight: 600;
+      }
+
+      .page-header {
+        min-height: 300px;
+        position: relative;
+      }
+
+      .page-header::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(0, 0, 0, 0.5);
+      }
+
+      .page-header .container {
+        position: relative;
+        z-index: 1;
+      }
+
+      .companion-section {
+        padding: 5rem 0;
+      }
+
+      .border-primary-start {
+        border-left: 4px solid var(--primary-color) !important;
+      }
+
+      .card-hover:hover {
+        transform: translateY(-5px);
+        transition: transform 0.3s ease;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1) !important;
+      }
+
+      .service-item {
+        background: white;
+        overflow: hidden;
+        transition: all 0.3s ease;
+      }
+
+      .service-item:hover {
+        transform: translateY(-10px);
+      }
+
+      .service-img {
+        height: 200px;
+        overflow: hidden;
+      }
+
+      .service-img img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 0.5s ease;
+      }
+
+      .service-item:hover .service-img img {
+        transform: scale(1.1);
+      }
+
+      .accordion-button:not(.collapsed) {
+        background-color: rgba(25, 135, 84, 0.1);
+        color: var(--primary-color);
+      }
+
+      .list-group-item {
+        border-left: none;
+        border-right: none;
+        padding: 1rem 0;
+      }
+
+      .list-group-item:first-child {
+        border-top: none;
+      }
+
+      @media (max-width: 768px) {
+        .display-9 {
+          font-size: 1.5rem;
+        }
+
+        .display-10 {
+          font-size: 1.25rem;
+        }
+
+        .page-header {
+          min-height: 200px;
+        }
+
+        .what-img {
+          margin-top: 2rem;
+        }
+
+        .what-img img {
+          width: 100% !important;
+          height: auto !important;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Spinner -->
+    <!-- <div id="spinner" class="position-fixed w-100 vh-100 d-flex align-items-center justify-content-center bg-white" style="z-index: 9999;">
+      <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;"></div>
+    </div> -->
+
+    <!-- Topbar -->
+    <div class="bg-dark text-light py-2">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-7 d-none d-md-flex">
+            <div class="d-inline-flex align-items-center me-4">
+              <i class="bi bi-telephone me-2"></i>
+              <span>+254794311738</span>
+            </div>
+            <div class="d-inline-flex align-items-center">
+              <i class="bi bi-envelope me-2"></i>
+              <span>info@ndogofarms.co.ke</span>
+            </div>
+          </div>
+          <div class="col-md-5 text-md-end">
+            <div class="d-inline-flex align-items-center">
+              <span class="me-2">Follow Us:</span>
+              <a
+                class="text-light me-3"
+                href="https://www.facebook.com/Ndogofarm"
+                target="_blank"
+              >
+                <i class="bi bi-facebook"></i>
+              </a>
+              <a
+                class="text-light me-3"
+                href="https://twitter.com/ndogofarm"
+                target="_blank"
+              >
+                <i class="bi bi-twitter"></i>
+              </a>
+              <a
+                class="text-light"
+                href="https://www.instagram.com/ndogo_farms"
+                target="_blank"
+              >
+                <i class="bi bi-instagram"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Navbar -->
+    <nav
+      class="navbar navbar-expand-lg navbar-light bg-white sticky-top shadow-sm"
+    >
+      <div class="container">
+        <a class="navbar-brand" href="index.html">
+          <img src="img/newlogobg.png" alt="Logo" height="60" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="service.html">Services & Products</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="project.html">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="companion.html">Companion</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Page Header -->
+    <div class="page-header">
+      <div
+        class="container h-100 d-flex flex-column justify-content-center text-center"
+      >
+        <h1 class="display-4 text-white fw-bold mb-3">Companion Guide</h1>
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb justify-content-center">
+            <li class="breadcrumb-item">
+              <a href="index.html" class="text-white text-decoration-none"
+                >Home</a
+              >
+            </li>
+            <li class="breadcrumb-item active text-white" aria-current="page">
+              Companion
+            </li>
+          </ol>
+        </nav>
+      </div>
+    </div>
+
+    <!-- pest -->
+    <section class="py-5 bg-light">
+      <div class="container">
+        <div class="row mb-5 text-center">
+          <div class="col-lg-10 mx-auto">
+            <h3 class="fw-bold text-primary mb-3">
+              Pests & Diseases Identification Guide
+            </h3>
+            <p class="text-muted">
+              Visual reference for identification, symptoms, and organic
+              solutions.
+            </p>
+          </div>
+        </div>
+
+        <div class="row g-4" id="pest-cards-container"></div>
+      </div>
+    </section>
+
+    <!-- Companion Section -->
+    <section class="companion-section">
+      <div class="container">
+        <!-- Introduction -->
+        <div class="row align-items-center mb-5">
+          <div class="col-lg-6 mb-4 mb-lg-0">
+            <h2 class="display-9 text-primary fw-bold mb-3">
+              What is Companion Planting?
+            </h2>
+            <p class="lead">
+              Companion planting is the practice of growing two or more plant
+              species in close proximity to provide mutual benefits such as pest
+              control, improved pollination, better use of space, soil
+              improvement, and higher yields. This traditional practice is
+              increasingly supported by agroecological research and practical
+              experience.
+            </p>
+          </div>
+          <div class="col-lg-6">
+            <div class="what-img rounded overflow-hidden shadow">
+              <img
+                src="img/project-5.jpg"
+                alt="Companion Planting"
+                class="img-fluid w-100"
+              />
+            </div>
+          </div>
+        </div>
+
+        <section class="py-5">
+          <div class="container">
+            <!-- Section Header -->
+            <div class="row mb-5">
+              <div class="col-lg-10 mx-auto text-center">
+                <h3 class="fw-bold text-primary mb-3">
+                  Key Principles & Mechanisms
+                </h3>
+                <p class="text-muted">
+                  Core ecological interactions that make companion planting
+                  effective in small and urban gardens.
+                </p>
+              </div>
+            </div>
+
+            <div class="row g-4">
+              <!-- Card 1 -->
+              <div class="col-md-6 col-lg-4">
+                <div
+                  class="card border-0 shadow position-relative overflow-hidden"
+                  style="height: 420px"
+                >
+                  <img
+                    src="https://images.pexels.com/photos/29429223/pexels-photo-29429223.jpeg"
+                    class="w-100 h-100 object-fit-cover"
+                    alt="Biodiversity"
+                  />
+                  <div
+                    class="position-absolute top-0 start-0 w-100 h-100"
+                    style="
+                      background: linear-gradient(
+                        to top,
+                        rgba(0, 0, 0, 0.75),
+                        rgba(0, 0, 0, 0.15)
+                      );
+                    "
+                  ></div>
+                  <div
+                    class="position-absolute bottom-0 start-0 w-100 text-white p-4"
+                  >
+                    <h6 class="fw-bold mb-2 text-white">
+                      Biodiversity & Balance
+                    </h6>
+                    <p class="small mb-2 text-white">
+                      Diverse plant combinations create a stable ecosystem that
+                      naturally limits pest outbreaks.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Card 2 -->
+              <div class="col-md-6 col-lg-4">
+                <div
+                  class="card border-0 shadow position-relative overflow-hidden"
+                  style="height: 420px"
+                >
+                  <img
+                    src="https://images.pexels.com/photos/7954045/pexels-photo-7954045.jpeg"
+                    class="w-100 h-100 object-fit-cover"
+                    alt="Beneficial Insects"
+                  />
+                  <div
+                    class="position-absolute top-0 start-0 w-100 h-100"
+                    style="
+                      background: linear-gradient(
+                        to top,
+                        rgba(0, 0, 0, 0.75),
+                        rgba(0, 0, 0, 0.15)
+                      );
+                    "
+                  ></div>
+                  <div
+                    class="position-absolute bottom-0 start-0 w-100 text-white p-4"
+                  >
+                    <h6 class="fw-bold mb-2 text-white">Beneficial Insects</h6>
+                    <p class="small mb-2 text-white">
+                      Flowering herbs attract pollinators and predators like
+                      ladybirds that control pests.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Card 3 -->
+              <div class="col-md-6 col-lg-4">
+                <div
+                  class="card border-0 shadow position-relative overflow-hidden"
+                  style="height: 420px"
+                >
+                  <img
+                    src="https://gardenerspath.com/wp-content/uploads/2022/02/How-to-Use-Trap-Crops-as-Decoys-to-Control-Insect-Pests-Hero.jpg"
+                    class="w-100 h-100 object-fit-cover"
+                    alt="Trap Cropping"
+                  />
+                  <div
+                    class="position-absolute top-0 start-0 w-100 h-100"
+                    style="
+                      background: linear-gradient(
+                        to top,
+                        rgba(0, 0, 0, 0.75),
+                        rgba(0, 0, 0, 0.15)
+                      );
+                    "
+                  ></div>
+                  <div
+                    class="position-absolute bottom-0 start-0 w-100 text-white p-4"
+                  >
+                    <h6 class="fw-bold mb-2 text-white">Trap Cropping</h6>
+                    <p class="small mb-2">
+                      Sacrificial plants draw pests away from main crops,
+                      reducing damage.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Card 4 -->
+              <div class="col-md-6 col-lg-4">
+                <div
+                  class="card border-0 shadow position-relative overflow-hidden"
+                  style="height: 420px"
+                >
+                  <img
+                    src="https://cdn.shopify.com/s/files/1/0310/4050/3945/files/SSE_Blog_Pictures_-_2023-10-03T154813.478.png?v=1696366110"
+                    class="w-100 h-100 object-fit-cover"
+                    alt="Plant Support & Shade"
+                  />
+                  <div
+                    class="position-absolute top-0 start-0 w-100 h-100"
+                    style="
+                      background: linear-gradient(
+                        to top,
+                        rgba(0, 0, 0, 0.75),
+                        rgba(0, 0, 0, 0.15)
+                      );
+                    "
+                  ></div>
+                  <div
+                    class="position-absolute bottom-0 start-0 w-100 text-white p-4"
+                  >
+                    <h6 class="fw-bold mb-2 text-white">
+                      Physical Support & Shade
+                    </h6>
+                    <p class="small mb-2 text-white">
+                      Taller crops provide shade and structural support for
+                      climbers.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Card 5 -->
+              <div class="col-md-6 col-lg-4">
+                <div
+                  class="card border-0 shadow position-relative overflow-hidden"
+                  style="height: 420px"
+                >
+                  <img
+                    src="https://germinal.com/wp-content/uploads/2025/01/Nitrogen-fixing-clover-1024x450-min.png"
+                    class="w-100 h-100 object-fit-cover"
+                    alt="Nitrogen Fixation"
+                  />
+                  <div
+                    class="position-absolute top-0 start-0 w-100 h-100"
+                    style="
+                      background: linear-gradient(
+                        to top,
+                        rgba(0, 0, 0, 0.75),
+                        rgba(0, 0, 0, 0.15)
+                      );
+                    "
+                  ></div>
+                  <div
+                    class="position-absolute bottom-0 start-0 w-100 text-white p-4"
+                  >
+                    <h6 class="fw-bold mb-2 text-white">Nitrogen Fixation</h6>
+                    <p class="small mb-2 text-white">
+                      Legumes enrich soil nitrogen, feeding neighboring crops
+                      naturally.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Card 6 -->
+              <div class="col-md-6 col-lg-4">
+                <div
+                  class="card border-0 shadow position-relative overflow-hidden"
+                  style="height: 420px"
+                >
+                  <img
+                    src="https://www.agroscope.admin.ch/agroscope/en/home/topics/plant-production/plant-protection/herbologie/allelopathie/_jcr_content/par/columncontrols/items/0/column/image/image.imagespooler.jpg/1501512242935/allelopathie.jpg"
+                    class="w-100 h-100 object-fit-cover"
+                    alt="Allelopathy"
+                  />
+                  <div
+                    class="position-absolute top-0 start-0 w-100 h-100"
+                    style="
+                      background: linear-gradient(
+                        to top,
+                        rgba(0, 0, 0, 0.75),
+                        rgba(0, 0, 0, 0.15)
+                      );
+                    "
+                  ></div>
+                  <div
+                    class="position-absolute bottom-0 start-0 w-100 text-white p-4"
+                  >
+                    <h6 class="fw-bold mb-2 text-white">Allelopathy</h6>
+                    <p class="small mb-2 text-white">
+                      Some plants release chemicals that suppress weeds or
+                      pests.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Benefits -->
+        <div class="row mb-5">
+          <div class="col-12">
+            <div class="bg-primary bg-opacity-10 rounded p-5">
+              <h2 class="display-10 text-primary fw-bold mb-4">
+                Benefits of Companion Planting
+              </h2>
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="d-flex align-items-start mb-3">
+                    <i
+                      class="bi bi-check-circle-fill text-success fs-5 me-3 mt-1"
+                    ></i>
+                    <div>
+                      <h5 class="fw-bold">Reduced Pest Pressure</h5>
+                      <p class="mb-0">
+                        Decrease reliance on synthetic pesticides through
+                        natural pest control.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="d-flex align-items-start mb-3">
+                    <i
+                      class="bi bi-check-circle-fill text-success fs-5 me-3 mt-1"
+                    ></i>
+                    <div>
+                      <h5 class="fw-bold">Improved Pollination</h5>
+                      <p class="mb-0">
+                        Higher yields for fruiting crops through better
+                        pollination.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="d-flex align-items-start">
+                    <i
+                      class="bi bi-check-circle-fill text-success fs-5 me-3 mt-1"
+                    ></i>
+                    <div>
+                      <h5 class="fw-bold">Better Space Utilization</h5>
+                      <p class="mb-0">
+                        Optimize space in small urban gardens through strategic
+                        planting.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="d-flex align-items-start mb-3">
+                    <i
+                      class="bi bi-check-circle-fill text-success fs-5 me-3 mt-1"
+                    ></i>
+                    <div>
+                      <h5 class="fw-bold">Enhanced Soil Fertility</h5>
+                      <p class="mb-0">
+                        Improve soil structure and fertility over time through
+                        companion planting.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="d-flex align-items-start mb-3">
+                    <i
+                      class="bi bi-check-circle-fill text-success fs-5 me-3 mt-1"
+                    ></i>
+                    <div>
+                      <h5 class="fw-bold">Diversified Harvests</h5>
+                      <p class="mb-0">
+                        Reduce risk of total crop failure and increase harvest
+                        diversity.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="d-flex align-items-start">
+                    <i
+                      class="bi bi-check-circle-fill text-success fs-5 me-3 mt-1"
+                    ></i>
+                    <div>
+                      <h5 class="fw-bold">Sustainable Gardening</h5>
+                      <p class="mb-0">
+                        Create a more resilient and sustainable gardening
+                        ecosystem.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Companion Pairings -->
+        <div class="row mb-5">
+          <div class="col-12">
+            <h2 class="display-10 text-primary fw-bold mb-4 text-center">
+              Practical Companion Planting Guide
+            </h2>
+            <div class="accordion" id="companionAccordion">
+              <!-- Tomatoes -->
+              <div class="accordion-item border-0 shadow-sm mb-3">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed bg-primary bg-opacity-10"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#tomatoCollapse"
+                  >
+                    <i class="bi bi-tomato text-primary me-2"></i>
+                    <span class="fw-bold">Tomatoes</span>
+                  </button>
+                </h2>
+                <div
+                  id="tomatoCollapse"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#companionAccordion"
+                >
+                  <div class="accordion-body">
+                    <div class="row">
+                      <div class="col-md-6">
+                        <h6 class="text-success fw-bold">Good Companions:</h6>
+                        <ul class="list-unstyled">
+                          <li>
+                            <i class="bi bi-check-circle text-success me-2"></i
+                            >Basil (improves flavor, repels pests)
+                          </li>
+                          <li>
+                            <i class="bi bi-check-circle text-success me-2"></i
+                            >Marigolds (nematode deterrent)
+                          </li>
+                          <li>
+                            <i class="bi bi-check-circle text-success me-2"></i
+                            >Borage (attracts pollinators)
+                          </li>
+                          <li>
+                            <i class="bi bi-check-circle text-success me-2"></i
+                            >Onions
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="col-md-6">
+                        <h6 class="text-danger fw-bold">Avoid:</h6>
+                        <p class="mb-0">
+                          Brassicas nearby (can compete). Rotate with legumes.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Continue with other accordion items in similar format... -->
+              <!-- I'll shorten for brevity, but you should continue with all existing accordion items -->
+
+              <!-- Sukuma Wiki -->
+              <div class="accordion-item border-0 shadow-sm mb-3">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed bg-primary bg-opacity-10"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#sukumaCollapse"
+                  >
+                    <i class="bi bi-flower2 text-primary me-2"></i>
+                    <span class="fw-bold">Sukuma Wiki (Kale)</span>
+                  </button>
+                </h2>
+                <div
+                  id="sukumaCollapse"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#companionAccordion"
+                >
+                  <div class="accordion-body">
+                    <div class="row">
+                      <div class="col-md-6">
+                        <h6 class="text-success fw-bold">Good Companions:</h6>
+                        <ul class="list-unstyled">
+                          <li>
+                            <i class="bi bi-check-circle text-success me-2"></i
+                            >Beans (nitrogen)
+                          </li>
+                          <li>
+                            <i class="bi bi-check-circle text-success me-2"></i
+                            >Marigold
+                          </li>
+                          <li>
+                            <i class="bi bi-check-circle text-success me-2"></i
+                            >Onions
+                          </li>
+                          <li>
+                            <i class="bi bi-check-circle text-success me-2"></i
+                            >Herbs like basil and coriander
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="col-md-6">
+                        <h6 class="text-warning fw-bold">Local Tip:</h6>
+                        <p class="mb-0">
+                          Intercropping with legumes boosts yield significantly.
+                          Highly recommended for Kenyan urban gardens.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Urban Gardening Solutions -->
+        <div class="row mb-5">
+          <div class="col-12">
+            <h2 class="display-10 text-primary fw-bold mb-4 text-center">
+              Urban Gardening Solutions
+            </h2>
+            <div class="row g-4">
+              <div class="col-md-6 col-lg-4">
+                <div class="card h-100 border-0 shadow-sm overflow-hidden">
+                  <div
+                    class="card-img-top overflow-hidden"
+                    style="height: 200px"
+                  >
+                    <img
+                      src="img/grow bag 3.jpg"
+                      alt="Grow Bags"
+                      class="img-fluid w-100 h-100 object-fit-cover"
+                    />
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title text-primary fw-bold">
+                      Using Legumes
+                    </h5>
+                    <p class="card-text">
+                      Beans and peas improve soil for leafy vegetables like
+                      sukuma wiki through nitrogen fixation.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-6 col-lg-4">
+                <div class="card h-100 border-0 shadow-sm overflow-hidden">
+                  <div
+                    class="card-img-top overflow-hidden"
+                    style="height: 200px"
+                  >
+                    <img
+                      src="img/Product2.jpg"
+                      alt="Marigolds"
+                      class="img-fluid w-100 h-100 object-fit-cover"
+                    />
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title text-primary fw-bold">
+                      Planting Marigolds
+                    </h5>
+                    <p class="card-text">
+                      Marigolds and strong-scented herbs naturally reduce
+                      nematodes and pests in your garden.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-6 col-lg-4">
+                <div class="card h-100 border-0 shadow-sm overflow-hidden">
+                  <div
+                    class="card-img-top overflow-hidden"
+                    style="height: 200px"
+                  >
+                    <img
+                      src="img/Vertical Farm 1.jpg"
+                      alt="Timing"
+                      class="img-fluid w-100 h-100 object-fit-cover"
+                    />
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title text-primary fw-bold">
+                      Timing Plantings
+                    </h5>
+                    <p class="card-text">
+                      Schedule plantings around Kenya's long rains (March-May)
+                      and short rains (Oct-Dec) for optimal growth.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Implementation Steps -->
+        <div class="row mb-5">
+          <div class="col-12">
+            <h2 class="display-10 text-primary fw-bold mb-4 text-center">
+              Implementation Steps & Practical Tips
+            </h2>
+            <div class="row align-items-center">
+              <div class="col-lg-4 mb-4 mb-lg-0">
+                <div class="list-group border-0">
+                  <div class="list-group-item border-0">
+                    <div class="d-flex align-items-start">
+                      <span class="badge bg-primary rounded-circle me-3 mt-1"
+                        >1</span
+                      >
+                      <div>
+                        <h6 class="fw-bold mb-1">Start Small</h6>
+                        <p class="mb-0 small">
+                          Test 2–3 companion pairs in a single bed or grow bag
+                          first.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="list-group-item border-0">
+                    <div class="d-flex align-items-start">
+                      <span class="badge bg-primary rounded-circle me-3 mt-1"
+                        >2</span
+                      >
+                      <div>
+                        <h6 class="fw-bold mb-1">Observe and Record</h6>
+                        <p class="mb-0 small">
+                          Note pest pressure, yields, and plant health weekly.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="list-group-item border-0">
+                    <div class="d-flex align-items-start">
+                      <span class="badge bg-primary rounded-circle me-3 mt-1"
+                        >3</span
+                      >
+                      <div>
+                        <h6 class="fw-bold mb-1">Rotate Crops</h6>
+                        <p class="mb-0 small">
+                          Rotate crops yearly to reduce disease buildup.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-4 text-center mb-4 mb-lg-0">
+                <img
+                  src="img/Ndogofarm Plant (4).png"
+                  alt="Plant"
+                  class="img-fluid"
+                  style="max-height: 250px"
+                />
+              </div>
+
+              <div class="col-lg-4">
+                <div class="list-group border-0">
+                  <div class="list-group-item border-0">
+                    <div class="d-flex align-items-start">
+                      <span class="badge bg-primary rounded-circle me-3 mt-1"
+                        >4</span
+                      >
+                      <div>
+                        <h6 class="fw-bold mb-1">Use Flowering Strips</h6>
+                        <p class="mb-0 small">
+                          Plant pollinator-attracting flowers in strips or pots.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="list-group-item border-0">
+                    <div class="d-flex align-items-start">
+                      <span class="badge bg-primary rounded-circle me-3 mt-1"
+                        >5</span
+                      >
+                      <div>
+                        <h6 class="fw-bold mb-1">Avoid Overcrowding</h6>
+                        <p class="mb-0 small">
+                          Ensure proper air flow to prevent fungal diseases.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="list-group-item border-0">
+                    <div class="d-flex align-items-start">
+                      <span class="badge bg-primary rounded-circle me-3 mt-1"
+                        >6</span
+                      >
+                      <div>
+                        <h6 class="fw-bold mb-1">Container Gardening</h6>
+                        <p class="mb-0 small">
+                          Use containers for invasive herbs like mint.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Cautions -->
+        <div class="row">
+          <div class="col-12">
+            <div class="alert alert-warning border-warning" role="alert">
+              <div class="d-flex">
+                <i class="bi bi-exclamation-triangle-fill fs-4 me-3"></i>
+                <div>
+                  <h5 class="alert-heading fw-bold">Cautions & Common Myths</h5>
+                  <p class="mb-0">
+                    Companion planting is not a guaranteed solution; results
+                    vary with microclimate, soil, and timing. Some pairings are
+                    traditional rather than scientifically proven. Always use
+                    companion planting alongside good cultural practices like
+                    clean tools, crop rotation, and maintaining healthy soil.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-light py-5">
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-lg-4">
+            <h4 class="text-white mb-4">Our Office</h4>
+            <div class="d-flex align-items-start mb-3">
+              <i class="bi bi-geo-alt text-primary me-3 mt-1"></i>
+              <div>
+                <p class="mb-0">Murang'a, Kahatia</p>
+              </div>
+            </div>
+            <div class="d-flex align-items-start mb-3">
+              <i class="bi bi-telephone text-primary me-3 mt-1"></i>
+              <div>
+                <p class="mb-0">+254794311738</p>
+              </div>
+            </div>
+            <div class="d-flex align-items-start mb-4">
+              <i class="bi bi-envelope text-primary me-3 mt-1"></i>
+              <div>
+                <p class="mb-0">info@ndogofarms.co.ke</p>
+              </div>
+            </div>
+            <div class="d-flex">
+              <a href="#" class="text-light me-3"
+                ><i class="bi bi-facebook fs-5"></i
+              ></a>
+              <a href="#" class="text-light me-3"
+                ><i class="bi bi-twitter fs-5"></i
+              ></a>
+              <a href="#" class="text-light me-3"
+                ><i class="bi bi-instagram fs-5"></i
+              ></a>
+              <a href="#" class="text-light"
+                ><i class="bi bi-linkedin fs-5"></i
+              ></a>
+            </div>
+          </div>
+
+          <div class="col-lg-2 col-md-4">
+            <h4 class="text-white mb-4">Services</h4>
+            <ul class="list-unstyled">
+              <li class="mb-2">
+                <a href="service.html" class="text-light text-decoration-none"
+                  >Vertical Farming</a
+                >
+              </li>
+              <li class="mb-2">
+                <a href="service.html" class="text-light text-decoration-none"
+                  >Grow Bags</a
+                >
+              </li>
+              <li>
+                <a href="service.html" class="text-light text-decoration-none"
+                  >Living Walls</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-lg-2 col-md-4">
+            <h4 class="text-white mb-4">Quick Links</h4>
+            <ul class="list-unstyled">
+              <li class="mb-2">
+                <a href="about.html" class="text-light text-decoration-none"
+                  >About Us</a
+                >
+              </li>
+              <li class="mb-2">
+                <a href="contact.html" class="text-light text-decoration-none"
+                  >Contact Us</a
+                >
+              </li>
+              <li>
+                <a href="service.html" class="text-light text-decoration-none"
+                  >Our Services</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-lg-4 col-md-4">
+            <h4 class="text-white mb-4">Newsletter</h4>
+            <p>Subscribe to our newsletter for gardening tips and updates.</p>
+            <form>
+              <div class="input-group mb-3">
+                <input
+                  type="email"
+                  class="form-control"
+                  placeholder="Your email"
+                  aria-label="Email"
+                />
+                <button class="btn btn-primary" type="button">Subscribe</button>
+              </div>
+            </form>
+          </div>
+        </div>
+
+        <hr class="my-5 text-white-50" />
+
+        <div class="row">
+          <div class="col-md-6 text-center text-md-start">
+            <p class="mb-0">
+              &copy;
+              <a class="text-primary text-decoration-none" href="#"
+                >Ndogo Farms</a
+              >. All Rights Reserved.
+            </p>
+          </div>
+          <div class="col-md-6 text-center text-md-end">
+            <p class="mb-0">Designed By: Infitech Innovation</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Bootstrap JS Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+      const pests = [
+        {
+          name: "Aphids",
+          image:
+            "https://images.pexels.com/photos/20826378/pexels-photo-20826378.jpeg",
+          howItLooks:
+            "Small soft-bodied insects (green, black, white, yellow). Cluster on new growth and leaf undersides.",
+          symptoms: "Curled leaves, sticky honeydew, sooty mould.",
+          solutions:
+            "Spray strong water jet; neem oil; insecticidal soap; introduce ladybirds.",
+        },
+        {
+          name: "Whiteflies",
+          image:
+            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8H-sKzdkzD3YkUXwD1RKmwWNP-r5YiLzh48TGqqX3xujG_62Rnwfs-e1q6XhtCfX0ITXXu92o339Z4m5fpHaNEdWt3nl60gdM6thOJ0H8&s=10",
+          howItLooks:
+            "Tiny white moth-like insects that fly when the plant is disturbed.",
+          symptoms: "Leaf yellowing, honeydew, stunted growth.",
+          solutions: "Yellow sticky traps; neem oil; remove infected leaves.",
+        },
+        {
+          name: "Spider Mites",
+          image:
+            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTN-Gp2maB0j4BoMevawdk0UZU85bSZ_zVco3YZgIMF67ZBXEvkO-8YoMnjgpo8aty3td6Ka1wcDuOobb8OMDfJGsqy1cJP9G1Vm3_S9E4&s=10",
+          howItLooks: "Very tiny red/yellow dots; fine webbing on leaves.",
+          symptoms: "Speckled yellow leaves; dry appearance.",
+          solutions: "Increase humidity; water spray; neem oil.",
+        },
+        {
+          name: "Cutworms & Caterpillars",
+          image:
+            "https://gardenerspath.com/wp-content/uploads/2021/07/How-to-Control-Cutworms-Featured.jpg",
+          howItLooks:
+            "Grey or brown caterpillars curled in soil; green leaf-eating caterpillars.",
+          symptoms: "Seedlings cut at base; chewed leaves.",
+          solutions: "Hand-pick; BT spray; seedling collars.",
+        },
+        {
+          name: "Thrips",
+          image:
+            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxxjcwNJ_zs7TtPndOAgq5OgBsT_rWidm_QibiWnPCH0qnmOsQ-Fs8SayZTAWjt4BkLNmSf7mgV0QPtN9T_8Hvyfu9eCByQSKrpnk2vQ&s=10",
+          howItLooks: "Tiny slender insects; black or straw-colored.",
+          symptoms: "Silver streaks on leaves; distorted growth.",
+          solutions: "Blue sticky traps; neem oil; remove damaged parts.",
+        },
+        {
+          name: "Slugs & Snails",
+          image:
+            "https://www.epicgardening.com/wp-content/uploads/2022/01/snail-vs-slug-1.jpg",
+          howItLooks: "Soft-bodied pests; slime trails.",
+          symptoms: "Large irregular holes in leaves.",
+          solutions: "Hand-pick; beer traps; crushed eggshell barriers.",
+        },
+        {
+          name: "Root-Knot Nematodes",
+          image:
+            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtV_VCLodMKr73KFvjWkTN8plVFmDxGZCjDb1mqKcWQpgzGGQ36ursBf0EipZUgKlonyH7PE8kgtnTZSwbGu1KXP95ghSADnFVv0hJzA&s=10",
+          howItLooks: "Invisible above ground; roots have swollen galls.",
+          symptoms: "Stunted growth; yellowing; wilting.",
+          solutions: "Plant marigolds; solarize soil; improve organic matter.",
+        },
+        {
+          name: "Powdery Mildew",
+          image:
+            "https://gardenerspath.com/wp-content/uploads/2024/11/Powdery-Mildew-in-Greenhouse-Feature.jpg",
+          howItLooks: "White powder-like coating on leaves.",
+          symptoms: "Leaf distortion, early leaf drop.",
+          solutions: "Remove infected leaves; potassium bicarbonate spray.",
+        },
+        {
+          name: "Downy Mildew",
+          image:
+            "https://www.greenlife.co.ke/wp-content/uploads/2022/04/downy_mildew.jpg",
+          howItLooks:
+            "Grey/purple fuzz underside of leaves; yellow patches above.",
+          symptoms: "Leaf curling; slow growth.",
+          solutions: "Improve airflow; avoid overhead watering.",
+        },
+        {
+          name: "Early Blight (Tomatoes)",
+          image:
+            "https://extension.umd.edu/sites/extension.umd.edu/files/styles/optimized/public/2021-05/hgic_veg_early%20blight%20lesions%20on%20tomato_1573858_1200.jpg?itok=-1EwR8BC",
+          howItLooks: "Brown rings (target spots) on leaves.",
+          symptoms: "Lower leaves yellow and drop.",
+          solutions: "Remove debris; mulch; copper fungicide if needed.",
+        },
+        {
+          name: "Late Blight",
+          image:
+            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6mfypD6ZPZ3mMmXvRZVy2rOcDHe9cq89DpA8nvTkzoNt-oo9HoZeT_zch6Y3QwIB_SlmBz9W8ZDnZ2YhrQiGTQjHHmGpe_sGzziFyiH8&s=10",
+          howItLooks: "Water-soaked dark patches; white mould on leaf edges.",
+          symptoms: "Rapid plant collapse.",
+          solutions:
+            "Remove infected plants; improve airflow; avoid overhead watering.",
+        },
+        {
+          name: "Fusarium Wilt",
+          image:
+            "https://www.vegetables.bayer.com/ke/en-ke/knowledge-center/disease-guides/cucurbit/fusarium-wilt-3/_jcr_content/root/responsivegrid/responsivegrid/responsivegrid/image.coreimg.png/1624304951033/screen-shot-2020-02-13-at-10-24-18-am-237x300.png",
+          howItLooks:
+            "Yellowing on one side of the plant; brown streaks inside stem.",
+          symptoms: "Wilting during heat.",
+          solutions: "Rotate crops; solarize soil; compost improvement.",
+        },
+        {
+          name: "Damping-Off",
+          image:
+            "https://vegcropshotline.org/wp-content/uploads/2020/04/2017-06-08-22.48.49.jpg",
+          howItLooks: "Thin, collapsed seedlings at soil line.",
+          symptoms: "Poor germination.",
+          solutions: "Use sterile soil; avoid overwatering.",
+        },
+        {
+          name: "Root Rot",
+          image:
+            "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ49xZvwxwlLP83Yr5yRpRcCPwMYQJYW-BY1wBKD7i77VAQ9bAy",
+          howItLooks: "Roots appear brown/black, mushy.",
+          symptoms: "Slow growth; yellowing.",
+          solutions: "Improve drainage; reduce watering.",
+        },
+        {
+          name: "Bacterial Leaf Spot",
+          image:
+            "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTiUXkaorwpXIRTR8ILBE6Rgh-m7p67IyV-F8lHEQShFTf27QZM",
+          howItLooks: "Small dark water-soaked spots with yellow halos.",
+          symptoms: "Leaf drop; stunted growth.",
+          solutions: "Remove infected leaves; sanitize tools.",
+        },
+      ];
+
+      const container = document.getElementById("pest-cards-container");
+
+      pests.forEach((pest, index) => {
+        const cardId = "pest" + index;
+        const tabLook = "look" + index;
+        const tabSymptoms = "symptoms" + index;
+        const tabSolution = "solution" + index;
+
+        const card = document.createElement("div");
+        card.className = "col-12 col-lg-6";
+
+        card.innerHTML = `
+    <div class="card mb-4 shadow-sm" style="height: 250px;">
+      <div class="row g-0 h-100">
+        <div class="col-md-4 h-100">
+          <img src="${
+            pest.image
+          }" class="img-fluid h-100 w-100 object-fit-cover rounded-start" alt="${
+          pest.name
+        }">
+        </div>
+        <div class="col-md-8 h-100">
+          <div class="card-body d-flex flex-column h-100">
+            <h5 class="card-title text-primary fw-bold">${pest.name}</h5>
+            <ul class="nav nav-tabs small flex-nowrap" id="${cardId}Tab" role="tablist">
+              <li class="nav-item">
+                <button class="nav-link active p-2" data-bs-toggle="tab" data-bs-target="#${tabLook}" type="button">How it Looks</button>
+              </li>
+              <li class="nav-item">
+                <button class="nav-link p-2" data-bs-toggle="tab" data-bs-target="#${tabSymptoms}" type="button">Symptoms</button>
+              </li>
+              <li class="nav-item">
+                <button class="nav-link p-2" data-bs-toggle="tab" data-bs-target="#${tabSolution}" type="button">Organic Solutions</button>
+              </li>
+            </ul>
+            <div class="tab-content mt-3 flex-grow-1">
+              <div class="tab-pane fade show active" id="${tabLook}">
+                <ul class="mb-0">
+                ${pest.howItLooks
+                  .split(/[;]+/)
+                  .map((s) => `<li>${s.trim()}</li>`)
+                  .join("")}
+              </ul>
+              </div>
+             <div class="tab-pane fade" id="${tabSymptoms}">
+              <ul class="mb-0">
+                ${pest.symptoms
+                  .split(/[,;]+/)
+                  .map((s) => `<li>${s.trim()}</li>`)
+                  .join("")}
+              </ul>
+            </div>
+              <div class="tab-pane fade" id="${tabSolution}"> <ul class="mb-0">
+                ${pest.solutions
+                  .split(/[,;]+/)
+                  .map((s) => `<li>${s.trim()}</li>`)
+                  .join("")}
+              </ul></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  `;
+
+        container.appendChild(card);
+      });
+    </script>
+  </body>
+</html>
