@@ -1,0 +1,515 @@
+<style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      }
+
+      body {
+        background-color: #f9fdf8;
+        color: #333;
+        line-height: 1.6;
+        padding: 20px;
+        min-height: 100vh;
+      }
+
+      section {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 10px;
+      }
+
+      .container {
+        width: 100%;
+      }
+
+      .text-center {
+        text-align: center;
+        margin-bottom: 30px;
+      }
+
+      h1 {
+        color: #2d5a27;
+        font-size: clamp(1.8rem, 4vw, 2.5rem);
+        margin-bottom: 15px;
+      }
+
+      .text-center p {
+        font-size: clamp(0.95rem, 2vw, 1.05rem);
+        padding: 0 10px;
+      }
+
+      .howtouse {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(min(100%, 500px), 1fr));
+        gap: 25px;
+        margin-top: 30px;
+        width: 100%;
+      }
+
+      @media (max-width: 1100px) {
+        .howtouse {
+          grid-template-columns: repeat(auto-fit, minmax(min(100%, 450px), 1fr));
+          gap: 20px;
+        }
+      }
+
+      @media (max-width: 768px) {
+        body {
+          padding: 15px 10px;
+        }
+        
+        section {
+          padding: 5px;
+        }
+        
+        .howtouse {
+          grid-template-columns: 1fr;
+          gap: 25px;
+        }
+        
+        .text-center {
+          margin-bottom: 25px;
+        }
+        
+        h1 {
+          font-size: 1.8rem;
+        }
+      }
+
+      .stepbystepcard {
+        background-color: white;
+        border-radius: 12px;
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.08);
+        overflow: hidden;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        width: 100%;
+        max-width: 100%;
+        min-width: 0; /* Fix for flexbox/grid overflow */
+      }
+
+      @media (max-width: 768px) {
+        .stepbystepcard {
+          border-radius: 10px;
+          box-shadow: 0 5px 12px rgba(0, 0, 0, 0.08);
+        }
+      }
+
+      .stepbystepcard:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 12px 24px rgba(0, 0, 0, 0.12);
+      }
+
+      .card-top {
+        display: flex;
+        align-items: center;
+        padding: clamp(15px, 3vw, 20px);
+        background-color: #e8f4e8;
+        border-bottom: 1px solid #d0e6d0;
+        flex-wrap: wrap;
+        gap: 15px;
+      }
+
+      .card-top img {
+        width: clamp(60px, 10vw, 80px);
+        height: clamp(60px, 10vw, 80px);
+        border-radius: 50%;
+        object-fit: cover;
+        margin-right: clamp(10px, 3vw, 20px);
+        border: 3px solid white;
+        box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+        flex-shrink: 0;
+      }
+
+      .card-top h3 {
+        color: #2d5a27;
+        font-size: clamp(1.2rem, 3vw, 1.5rem);
+        margin: 0;
+        flex: 1;
+        min-width: 200px;
+      }
+
+      .card-content {
+        padding: clamp(20px, 3vw, 25px);
+      }
+
+      .card-description {
+        color: #5a7d5a;
+        margin-bottom: 20px;
+        font-size: clamp(0.95rem, 2vw, 1.05rem);
+      }
+
+      .start-btn {
+        background-color: #4a9c3e;
+        color: white;
+        border: none;
+        padding: 12px 25px;
+        border-radius: 50px;
+        font-size: clamp(0.9rem, 2vw, 1rem);
+        font-weight: 600;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+        transition: all 0.3s ease;
+        margin: 20px auto 0;
+        width: 100%;
+        max-width: 200px;
+      }
+
+      .start-btn:hover {
+        background-color: #3a7c30;
+        transform: scale(1.05);
+      }
+
+      /* Multi-step container */
+      .multi-step-card {
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.5s ease;
+        margin-top: 0;
+        opacity: 0;
+      }
+
+      .multi-step-card.active {
+        max-height: 5000px;
+        margin-top: 20px;
+        opacity: 1;
+      }
+
+      .step-progress {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 15px;
+        padding-bottom: 12px;
+        border-bottom: 1px solid #e0f0d9;
+        gap: 10px;
+      }
+
+      .step-indicators {
+        display: flex;
+        gap: 6px;
+        flex-wrap: wrap;
+        flex: 1;
+        min-width: 200px;
+      }
+
+      .step-dot {
+        width: clamp(8px, 2vw, 12px);
+        height: clamp(8px, 2vw, 12px);
+        border-radius: 50%;
+        background-color: #e0f0d9;
+        transition: all 0.3s ease;
+        flex-shrink: 0;
+      }
+
+      .step-dot.active {
+        background-color: #4a9c3e;
+        transform: scale(1.2);
+      }
+
+      .step-dot.completed {
+        background-color: #a3d39a;
+      }
+
+      .step-counter {
+        color: #2d5a27;
+        font-weight: 600;
+        font-size: clamp(0.8rem, 2vw, 0.9rem);
+        flex-shrink: 0;
+      }
+
+      .step-content {
+        padding: 10px 0 20px;
+        min-height: min-content;
+      }
+
+      @media (max-width: 768px) {
+        .step-content {
+          min-height: auto;
+        }
+      }
+
+      .step-page {
+        display: none;
+        animation: fadeIn 0.5s ease;
+      }
+
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+          transform: translateY(10px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      .step-page.active {
+        display: block;
+      }
+
+      .step-title {
+        color: #2d5a27;
+        font-size: clamp(1.1rem, 3vw, 1.4rem);
+        margin-bottom: 12px;
+        display: flex;
+        align-items: flex-start;
+        gap: 10px;
+      }
+
+      @media (max-width: 480px) {
+        .step-title {
+          align-items: center;
+        }
+      }
+
+      .step-icon {
+        background-color: #4a9c3e;
+        color: white;
+        width: clamp(35px, 8vw, 40px);
+        height: clamp(35px, 8vw, 40px);
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: bold;
+        font-size: clamp(1rem, 3vw, 1.2rem);
+        flex-shrink: 0;
+      }
+
+      .step-body {
+        color: #555;
+        margin-left: clamp(40px, 8vw, 50px);
+        font-size: clamp(0.9rem, 2vw, 1rem);
+      }
+
+      @media (max-width: 480px) {
+        .step-body {
+          margin-left: 45px;
+        }
+      }
+
+      .step-body ul,
+      .step-body ol {
+        margin-left: clamp(15px, 3vw, 20px);
+        margin-top: 8px;
+        margin-bottom: 8px;
+      }
+
+      .step-body li {
+        margin-bottom: 6px;
+      }
+
+      .step-tip {
+        background-color: #f0f8ed;
+        padding: clamp(12px, 3vw, 15px);
+        border-radius: 8px;
+        margin-top: 12px;
+        border-left: 4px solid #4a9c3e;
+        font-size: clamp(0.9rem, 2vw, 1rem);
+      }
+
+      .step-image {
+        width: 100%;
+        max-height: 180px;
+        object-fit: cover;
+        border-radius: 8px;
+        margin: 12px 0;
+      }
+
+      /* Navigation buttons */
+      .step-navigation {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 15px;
+        padding-top: 15px;
+        border-top: 1px solid #e0f0d9;
+        flex-wrap: wrap;
+        gap: 10px;
+      }
+
+      @media (max-width: 480px) {
+        .step-navigation {
+          flex-direction: column;
+          gap: 10px;
+        }
+        
+        .nav-btn {
+          width: 100%;
+          justify-content: center;
+        }
+      }
+
+      .nav-btn {
+        background-color: #f0f8ed;
+        color: #2d5a27;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 50px;
+        font-size: clamp(0.85rem, 2vw, 0.95rem);
+        font-weight: 600;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        transition: all 0.3s ease;
+        min-width: 140px;
+      }
+
+      .nav-btn:hover {
+        background-color: #4a9c3e;
+        color: white;
+      }
+
+      .nav-btn:disabled {
+        opacity: 0.5;
+        cursor: not-allowed;
+      }
+
+      .nav-btn:disabled:hover {
+        background-color: #f0f8ed;
+        color: #2d5a27;
+      }
+
+      .finish-btn {
+        background-color: #2d5a27;
+        color: white;
+      }
+
+      .finish-btn:hover {
+        background-color: #1e4019;
+      }
+
+      /* Initial content */
+      .startcontent {
+        display: block;
+      }
+
+      .startcontent.hidden {
+        display: none;
+      }
+
+      /* Summary step */
+      .summary-container {
+        text-align: center;
+        padding: 20px 0;
+      }
+
+      .summary-icon {
+        font-size: clamp(2.5rem, 6vw, 3rem);
+        color: #4a9c3e;
+        margin-bottom: 15px;
+      }
+
+      .summary-title {
+        color: #2d5a27;
+        font-size: clamp(1.3rem, 4vw, 1.6rem);
+        margin-bottom: 12px;
+      }
+
+      .summary-text {
+        color: #5a7d5a;
+        margin-bottom: 20px;
+        font-size: clamp(0.95rem, 2vw, 1.05rem);
+        padding: 0 10px;
+      }
+
+      .restart-btn {
+        background-color: #4a9c3e;
+        color: white;
+        border: none;
+        padding: 12px 25px;
+        border-radius: 50px;
+        font-size: clamp(0.9rem, 2vw, 1rem);
+        font-weight: 600;
+        cursor: pointer;
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        transition: all 0.3s ease;
+        margin-top: 10px;
+      }
+
+      .restart-btn:hover {
+        background-color: #3a7c30;
+        transform: scale(1.05);
+      }
+
+      .summary-buttons {
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+        margin-top: 20px;
+        flex-wrap: wrap;
+      }
+
+      @media (max-width: 480px) {
+        .summary-buttons {
+          flex-direction: column;
+          align-items: center;
+        }
+        
+        .restart-btn {
+          width: 100%;
+          max-width: 200px;
+        }
+      }
+
+      /* Small mobile specific adjustments */
+      @media (max-width: 360px) {
+        body {
+          padding: 10px 8px;
+        }
+        
+        .card-content {
+          padding: 15px;
+        }
+        
+        .step-body {
+          margin-left: 40px;
+        }
+        
+        .step-title {
+          font-size: 1rem;
+          gap: 8px;
+        }
+        
+        .step-icon {
+          width: 32px;
+          height: 32px;
+          font-size: 1rem;
+        }
+        
+        .nav-btn {
+          padding: 8px 15px;
+          font-size: 0.85rem;
+          min-width: 120px;
+        }
+        
+        .start-btn {
+          padding: 10px 20px;
+          font-size: 0.9rem;
+        }
+      }
+
+      /* Large desktop adjustments */
+      @media (min-width: 1600px) {
+        section {
+          max-width: 1400px;
+        }
+        
+        .howtouse {
+          gap: 35px;
+        }
+        
+        .stepbystepcard {
+          border-radius: 16px;
+        }
+      }
+    </style>
