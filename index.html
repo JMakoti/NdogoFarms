@@ -6,13 +6,14 @@
     <title>Ndogo farms</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="" name="keywords">
-    <meta content="" name="description">
+    <meta content="the page talks about Ndogo farms" name="description">
 
     <!-- Favicon -->
     <link href="img/favicon.ico" rel="icon">
 
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://res.cloudinary.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Jost:wght@500;600;700&family=Open+Sans:wght@400;500&display=swap" rel="stylesheet">  
 
@@ -262,12 +263,12 @@ html {
     <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top p-0">
         <a href="index.html" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
             <div id="logo-img">
-                <img src="img/newlogobg.png" style="height: 175%; width: auto; position: relative; top: 8.5px">
+                <img src="img/newlogobg.png" alt="logo" style="height: 175%; width: auto; position: relative; top: 8.5px">
 
 
             </div>
         </a>
-        <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+        <button type="button" aria-label="Toggle navigation" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarCollapse">
@@ -290,11 +291,24 @@ html {
     <div class="carousel-inner">
      <div class="carousel-item active">
     <div class="video-container">
-    <video autoplay loop muted playsinline>
-    <source src="https://res.cloudinary.com/drselhsl4/video/upload/v1766322480/NdogoFarms/video/egblwygmqmtkpypqqwvh.mp4" type="video/mp4">
-    Your browser does not support the video tag.
-    </video>
-     </div>
+    <video
+  autoplay
+  loop
+  muted
+  playsinline
+  preload="metadata"
+  poster="https://res.cloudinary.com/drselhsl4/image/upload/v1767418177/NdogoFarms/images/rwjycxm2k7bkvhrvv9am.webp"
+  width="1280"
+  height="720"
+>
+  <source
+    src="https://res.cloudinary.com/drselhsl4/video/upload/q_auto,f_auto,w_1280/v1766322480/NdogoFarms/video/egblwygmqmtkpypqqwvh.mp4"
+    type="video/mp4"
+  />
+  <track kind="captions" srclang="en" src="/captions/ndogo-farms.vtt" />
+  Your browser does not support the video tag.
+</video>
+
     <div class="carousel-caption" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); text-align: center; width: 90%; max-width: 800px; background: none !important;">
     <div class="container-fluid">
     <div class="row justify-content-center">
@@ -368,7 +382,7 @@ html {
     <div class="row align-items-center">
     <div class="col-md-6">
      <div class="about_img" style="height: 100%; display: flex; align-items: stretch;">
-    <img src="img/Ndogofarm Plant (5).png" style="width: 100%; height: auto; max-height: 500px; object-fit: cover;">
+    <img src="img/Ndogofarm Plant (5).png" loading="lazy" alt="Ndogo Farm Plant" style="width: 100%; height: auto; max-height: 500px; object-fit: cover;">
     </div>
  </div>
   <div class="col-md-6">
@@ -408,7 +422,7 @@ html {
                         <div class="col-lg-4 col-md-6">
                             <div class="service-item rounded d-flex h-100">
                                 <div class="service-img rounded">
-                                    <img class="img-fluid" src="img/grow bag 3.jpg" alt="Grow Bags">
+                                    <img class="img-fluid" loading="lazy" src="img/grow bag 3.jpg" alt="Grow Bags">
                                 </div>
                                 <div class="service-text rounded p-4">
                                     <h4 class="mb-3">Grow Bags</h4>
@@ -419,7 +433,7 @@ html {
                         <div class="col-lg-4 col-md-6">
                             <div class="service-item rounded d-flex h-100">
                                 <div class="service-img rounded">
-                                    <img class="img-fluid" src="img/Product2.jpg" alt="Raised Beds">
+                                    <img class="img-fluid" loading="lazy" src="img/Product2.jpg" alt="Raised Beds">
                                 </div>
                                 <div class="service-text rounded p-4">
                                     <h4 class="mb-3">Raised Beds</h4>
@@ -430,7 +444,7 @@ html {
                         <div class="col-lg-4 col-md-6">
                             <div class="service-item rounded d-flex h-100">
                                 <div class="service-img rounded">
-                                    <img class="img-fluid" src="img/Vertical Farm 1.jpg" alt="Vertical Gardens">
+                                    <img class="img-fluid" loading="lazy" src="img/Vertical Farm 1.jpg" alt="Vertical Gardens">
                                 </div>
                                 <div class="service-text rounded p-4">
                                     <h4 class="mb-3">Vertical Gardens</h4>
@@ -448,7 +462,7 @@ html {
                         <div class="col-lg-4 col-md-6">
                             <div class="service-item rounded d-flex h-100">
                                 <div class="service-img rounded">
-                                    <img class="img-fluid" src="img/pottingsoil.jpeg" alt="Organic Potting Mix">
+                                    <img class="img-fluid" loading="lazy" src="img/pottingsoil.jpeg" alt="Organic Potting Mix">
                                 </div>
                                 <div class="service-text rounded p-4">
                                     <h4 class="mb-3">Organic Potting Mix</h4>
@@ -459,7 +473,7 @@ html {
                         <div class="col-lg-4 col-md-6">
                             <div class="service-item rounded d-flex h-100">
                                 <div class="service-img rounded">
-                                    <img class="img-fluid" src="img/soilbg3.jpeg" alt="Organic Fertilizers">
+                                    <img class="img-fluid" loading="lazy" src="img/soilbg3.jpeg" alt="Organic Fertilizers">
                                 </div>
                                 <div class="service-text rounded p-4">
                                     <h4 class="mb-3">Organic Fertilizers</h4>
@@ -470,7 +484,7 @@ html {
                         <div class="col-lg-4 col-md-6">
                             <div class="service-item rounded d-flex h-100">
                                 <div class="service-img rounded">
-                                    <img class="img-fluid" src="img/organic pest.jpeg" alt="Organic Pesticides">
+                                    <img class="img-fluid" loading="lazy" src="img/organic pest.jpeg" alt="Organic Pesticides">
                                 </div>
                                 <div class="service-text rounded p-4">
                                     <h4 class="mb-3">Organic Pesticides</h4>
@@ -538,7 +552,7 @@ html {
             <!-- First Row -->
             <div class="col-md-6 col-lg-3">
                 <div class="fruite-item" style="background: #fff; padding: 15px; border-radius: 10px; text-align: center; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); transition: transform 0.3s;">
-                    <img src="img/growbag.jpg" class="img-fluid w-100" style="border-radius: 10px; margin-bottom: 10px;" alt="Oranges">
+                    <img src="img/growbag.jpg" loading="lazy" class="img-fluid w-100" style="border-radius: 10px; margin-bottom: 10px;" alt="Oranges">
                     <h4 style="font-size: 18px; font-weight: bold; color: #333;">Grow Bag</h4>
                  
                 </div>
@@ -546,7 +560,7 @@ html {
 
             <div class="col-md-6 col-lg-3">
                 <div class="fruite-item" style="background: #fff; padding: 15px; border-radius: 10px; text-align: center; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); transition: transform 0.3s;">
-                    <img src="img/bigraised.jpg" class="img-fluid w-100" style="border-radius: 10px; margin-bottom: 10px;" alt="Banana">
+                    <img src="img/bigraised.jpg" loading="lazy" class="img-fluid w-100" style="border-radius: 10px; margin-bottom: 10px;" alt="Banana">
                     <h4 style="font-size: 18px; font-weight: bold; color: #333;">Raised Bed</h4>
 
                 </div>
@@ -554,14 +568,14 @@ html {
 
             <div class="col-md-6 col-lg-3">
                 <div class="fruite-item" style="background: #fff; padding: 15px; border-radius: 10px; text-align: center; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); transition: transform 0.3s;">
-                    <img src="img/product5.jpg" class="img-fluid w-100" style="border-radius: 10px; margin-bottom: 10px;" alt="Grapes">
+                    <img src="img/product5.jpg" loading="lazy" class="img-fluid w-100" style="border-radius: 10px; margin-bottom: 10px;" alt="Grapes">
                     <h4 style="font-size: 18px; font-weight: bold; color: #333;">Mini Vertical garden</h4>
 
                 </div>
             </div>
             <div class="col-md-6 col-lg-3">
                 <div class="fruite-item" style="background: #fff; padding: 15px; border-radius: 10px; text-align: center; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); transition: transform 0.3s;">
-                    <img src="img/product8.jpg" class="img-fluid w-100" style="border-radius: 10px; margin-bottom: 10px;" alt="Apple">
+                    <img src="img/product8.jpg" loading="lazy" class="img-fluid w-100" style="border-radius: 10px; margin-bottom: 10px;" alt="Apple">
                     <h4 style="font-size: 18px; font-weight: bold; color: #333;">Potatoes Bag</h4>
 
                 </div>
@@ -595,6 +609,7 @@ html {
             <div class="card-top">
               <div>
                 <img
+                loading="lazy"
                   src="img/growbag.jpg"
                   alt="Grow bag"
                 />
@@ -977,6 +992,7 @@ html {
             <div class="card-top">
               <div>
                 <img
+                loading="lazy"
                   src="img/mini-raised-bed.jpg"
                   alt="Raised bed"
                 />
@@ -1387,12 +1403,12 @@ html {
         
         <div style="width: 70%; overflow: hidden; position: relative;">
             <div id="slider" style="display: flex; width: 150%; transition: transform 1.5s ease-in-out;">
-                <img src="img/prjct1.jpg" style="width: 25%; object-fit: cover; padding: 5px;">
-                <img src="img/prjct2.jpg" style="width: 25%; object-fit: cover; padding: 5px;">
-                <img src="img/prjct3.jpg" style="width: 25%; object-fit: cover; padding: 5px;">
-                <img src="img/prjct4.jpg" style="width: 25%; object-fit: cover; padding: 5px;">
-                <img src="img/prjct5.jpg" style="width: 25%; object-fit: cover; padding: 5px;">
-                <img src="img/prjct1.jpg" style="width: 25%; object-fit: cover; padding: 5px;">
+                <img src="img/prjct1.jpg" loading="lazy" alt="project image 1" style="width: 25%; object-fit: cover; padding: 5px;">
+                <img src="img/prjct2.jpg" loading="lazy" alt="project image 2" style="width: 25%; object-fit: cover; padding: 5px;">
+                <img src="img/prjct3.jpg" loading="lazy" alt="project image 3" style="width: 25%; object-fit: cover; padding: 5px;">
+                <img src="img/prjct4.jpg" loading="lazy" alt="project image 4" style="width: 25%; object-fit: cover; padding: 5px;">
+                <img src="img/prjct5.jpg" loading="lazy" alt="project image 5" style="width: 25%; object-fit: cover; padding: 5px;">
+                <img src="img/prjct1.jpg" loading="lazy" alt="project image 1" style="width: 25%; object-fit: cover; padding: 5px;">
             </div>
         </div>
 
