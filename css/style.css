@@ -483,6 +483,7 @@ body {
   .team-item {
     position: relative;
     overflow: hidden;
+    height: 360px;
   }
 
   .team-item .team-text {
