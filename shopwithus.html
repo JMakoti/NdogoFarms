@@ -282,7 +282,7 @@
       >
         <div id="logo-img">
           <img
-          loading="lazy"
+            loading="lazy"
             src="img/newlogobg.png"
             style="height: 175%; width: auto; position: relative; top: 8.5px"
           />
@@ -358,7 +358,7 @@
               "
             >
               <img
-              loading="lazy"
+                loading="lazy"
                 src="img/growbag.jpg"
                 class="img-fluid w-100"
                 style="border-radius: 10px; margin-bottom: 10px"
@@ -406,7 +406,7 @@
               "
             >
               <img
-              loading="lazy"
+                loading="lazy"
                 src="img/smallgrwbag.jpg"
                 class="img-fluid w-100"
                 style="border-radius: 10px; margin-bottom: 10px"
@@ -453,7 +453,7 @@
               "
             >
               <img
-              loading="lazy"
+                loading="lazy"
                 src="img/product7.jpg"
                 class="img-fluid w-100"
                 style="border-radius: 10px; margin-bottom: 10px"
@@ -501,7 +501,7 @@
               "
             >
               <img
-              loading="lazy"
+                loading="lazy"
                 src="img/bigraised.jpg"
                 class="img-fluid w-100"
                 style="border-radius: 10px; margin-bottom: 10px"
@@ -549,7 +549,7 @@
               "
             >
               <img
-              loading="lazy"
+                loading="lazy"
                 src="img/mini-raised-bed.jpg"
                 class="img-fluid w-100"
                 style="border-radius: 10px; margin-bottom: 10px"
@@ -596,7 +596,7 @@
               "
             >
               <img
-              loading="lazy"
+                loading="lazy"
                 src="img/rect.jpg"
                 class="img-fluid w-100"
                 style="border-radius: 10px; margin-bottom: 10px"
@@ -643,7 +643,7 @@
               "
             >
               <img
-              loading="lazy"
+                loading="lazy"
                 src="img/product5.jpg"
                 class="img-fluid w-100"
                 style="border-radius: 10px; margin-bottom: 10px"
@@ -688,7 +688,7 @@
               "
             >
               <img
-              loading="lazy"
+                loading="lazy"
                 src="img/product8.jpg"
                 class="img-fluid w-100"
                 style="border-radius: 10px; margin-bottom: 10px"
@@ -922,5 +922,72 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        let buttons = document.querySelectorAll(".buy-btn");
+
+        buttons.forEach((button) => {
+          button.addEventListener("click", function (event) {
+            event.preventDefault(); // Prevent normal link behavior
+
+            let productCard = this.closest(".fruite-item"); // Get the closest product card
+            let productName = productCard.querySelector("h4").innerText;
+            let productSize = productCard.querySelector("h5")
+              ? productCard.querySelector("h5").innerText
+              : "";
+            let productPrice = productCard.querySelector("p").innerText;
+            let productImage = productCard
+              .querySelector("img")
+              .getAttribute("src");
+
+            // Replace with your WhatsApp number
+            let phoneNumber = "254794311738";
+
+            let message = `I'm interested in the *${productName}* ${productSize} - ${productPrice}.\n\nImage: ${window.location.origin}/${productImage}`;
+
+            let whatsappLink = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(
+              message
+            )}`;
+
+            // Open WhatsApp link in a new tab
+            window.open(whatsappLink, "_blank");
+          });
+        });
+      });
+      //animate Buy section
+      document.addEventListener("DOMContentLoaded", function () {
+        const cards = document.querySelectorAll(".fruite-item");
+
+        cards.forEach((card, index) => {
+          card.style.opacity = 0;
+          card.style.transform = "translateY(20px)";
+
+          setTimeout(() => {
+            card.style.transition =
+              "opacity 0.6s ease-in-out, transform 0.6s ease-in-out";
+            card.style.opacity = 1;
+            card.style.transform = "translateY(0)";
+          }, index * 150);
+        });
+      });
+
+      //Kit Script
+      function sendToWhatsApp(element) {
+        var phoneNumber = "254794311738";
+        var productName = element.getAttribute("data-name");
+        var productPrice = element.getAttribute("data-price");
+        var productDescription = element.getAttribute("data-description");
+        var productImage =
+          window.location.origin + "/" + element.getAttribute("data-image"); // Ensure full URL
+
+        var message = `I'm interested in the *${productName}* \n\n💰 *Price:* ${productPrice} \n📦 *Includes:* ${productDescription} \n🖼️ *Image:* ${productImage}`;
+
+        var whatsappURL = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(
+          message
+        )}`;
+
+        window.open(whatsappURL, "_blank");
+      }
+    </script>
   </body>
 </html>
